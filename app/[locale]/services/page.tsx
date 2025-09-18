@@ -5,17 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "@/lib/i18n";
 
-// Note: Metadata should be handled in a layout or server component for dynamic locale support
-// export const metadata: Metadata = {
-//   title: "Services | JA Automation",
-//   description: "Complete solutions in industrial automation: PLC programming, electrical projects, consulting and more.",
-//   openGraph: {
-//     title: "Services | JA Automation", 
-//     description: "Complete solutions in industrial automation: PLC programming, electrical projects, consulting and more.",
-//     url: "https://ja-automation.com/services",
-//   },
-// };
-
 export default function ServicesPage() {
   const { t, locale } = useTranslations();
   const services = [
