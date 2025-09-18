@@ -74,6 +74,7 @@ function CaseCard({ caseStudy, index, t }: { caseStudy: any, index: number, t: a
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { caseStudies, industries } from "@/lib/casesData";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 export default function CasesPage() {
   const [activeIndustry, setActiveIndustry] = useState("all");
@@ -132,21 +133,31 @@ export default function CasesPage() {
               {/* Professional Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                  <div className="text-4xl font-bold text-white mb-2">{caseStudies.length}</div>
+                  <AnimatedCounter
+                    end={caseStudies.length}
+                    duration={2000}
+                    className="text-4xl font-bold text-white mb-2"
+                  />
                   <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.projects}</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                  <div className="text-4xl font-bold text-white mb-2">{industries.length - 1}</div>
+                  <AnimatedCounter
+                    end={industries.length - 1}
+                    duration={2200}
+                    className="text-4xl font-bold text-white mb-2"
+                  />
                   <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.industries}</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                  <div className="text-4xl font-bold text-white mb-2">15+</div>
+                  <AnimatedCounter
+                    end={15}
+                    duration={2400}
+                    suffix="+"
+                    className="text-4xl font-bold text-white mb-2"
+                  />
                   <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.years}</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                  <div className="text-4xl font-bold text-white mb-2">98%</div>
-                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.successRate}</div>
-                </div>
+                
               </div>
             </div>
           </div>
