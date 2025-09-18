@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Cleaner and Silo Expansion for Soy Beans",
+    "date": "February 2019",
+    "category": "Food Processing",
+    "description": "Automation design for Silo control expansion for soy bean drying process using PLC Rockwell and Wonderware InTouch supervisory system.",
+    "technologies": ["PLC Rockwell", "Wonderware InTouch", "SCADA"],
+    "tags": ["Food Processing", "Silo Control", "Automation", "Soy Beans"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 2,
+    "title": "Soy Oil Filling Line Automation Changes",
+    "date": "February 2019 – April 2019",
+    "category": "Food Processing",
+    "description": "Conveyor changes to fit new production requirements, palletizer modifications for new pallet formation, and labeller signal integration using Siemens PLC and HMI systems.",
+    "technologies": ["PLC Siemens", "HMI Siemens", "Conveyor Systems"],
+    "tags": ["Food Processing", "Filling Line", "Palletizer", "Conveyor"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 3,
+    "title": "Schuler Stamping Press Ford",
+    "date": "August 2018 – March 2019",
+    "category": "Automotive",
+    "description": "Automation improvement, troubleshooting, commissioning, and service for Ford stamping press operations.",
+    "technologies": ["Stamping Press", "Ford Systems", "Industrial Automation"],
+    "tags": ["Automotive", "Ford", "Stamping", "Commissioning"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 4,
+    "title": "Wire Harness Oven BMW",
+    "date": "March 2018 – July 2018",
+    "category": "Automotive",
+    "description": "Wire harness oven extension project using Siemens STEP 7 and WinCC Flexible for BMW manufacturing operations.",
+    "technologies": ["Siemens STEP 7", "WinCC Flexible", "Industrial Oven"],
+    "tags": ["Automotive", "BMW", "Wire Harness", "Oven Systems"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 5,
+    "title": "Marriage Line BMW Spartanburg SC",
+    "date": "March 2018 – May 2018",
+    "category": "Automotive",
+    "description": "PLC and Robot integration in the marriage line for powertrain and car body assembly at BMW Spartanburg facility.",
+    "technologies": ["PLC Integration", "Robotics", "Marriage Line"],
+    "tags": ["Automotive", "BMW", "Robotics", "Assembly Line"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 6,
+    "title": "Chicago Tower Bodyshop",
+    "date": "March 2018 – April 2019",
+    "category": "Automotive",
+    "description": "Bodyshop PLC integration project using Rockwell equipment for automotive manufacturing operations.",
+    "technologies": ["Rockwell PLC", "Bodyshop Systems", "Industrial Control"],
+    "tags": ["Automotive", "Bodyshop", "Rockwell", "Manufacturing"],
+    "image": "/images/home/projects/project.webp"
+  }
+]

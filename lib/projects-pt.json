@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Expansão de Limpador e Silo para Grãos de Soja",
+    "date": "Fevereiro 2019",
+    "category": "Processamento de Alimentos",
+    "description": "Projeto de automação para expansão de controle de silo para processo de secagem de grãos de soja usando PLC Rockwell e sistema supervisório Wonderware InTouch.",
+    "technologies": ["PLC Rockwell", "Wonderware InTouch", "SCADA"],
+    "tags": ["Processamento de Alimentos", "Controle de Silo", "Automação", "Grãos de Soja"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 2,
+    "title": "Alterações na Automação da Linha de Envase de Óleo de Soja",
+    "date": "Fevereiro 2019 – Abril 2019",
+    "category": "Processamento de Alimentos",
+    "description": "Alterações no transportador para atender novos requisitos de produção, modificações no paletizador para nova formação de paletes e integração de sinais de etiquetadora usando sistemas PLC e IHM Siemens.",
+    "technologies": ["PLC Siemens", "IHM Siemens", "Sistemas de Transporte"],
+    "tags": ["Processamento de Alimentos", "Linha de Envase", "Paletizador", "Transportador"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 3,
+    "title": "Prensa de Estampagem Schuler Ford",
+    "date": "Agosto 2018 – Março 2019",
+    "category": "Automotivo",
+    "description": "Melhoria de automação, resolução de problemas, comissionamento e serviço para operações de prensa de estampagem da Ford.",
+    "technologies": ["Prensa de Estampagem", "Sistemas Ford", "Automação Industrial"],
+    "tags": ["Automotivo", "Ford", "Estampagem", "Comissionamento"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 4,
+    "title": "Forno de Chicote Elétrico BMW",
+    "date": "Março 2018 – Julho 2018",
+    "category": "Automotivo",
+    "description": "Projeto de extensão de forno de chicote elétrico usando Siemens STEP 7 e WinCC Flexible para operações de fabricação da BMW.",
+    "technologies": ["Siemens STEP 7", "WinCC Flexible", "Forno Industrial"],
+    "tags": ["Automotivo", "BMW", "Chicote Elétrico", "Sistemas de Forno"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 5,
+    "title": "Linha BMW Spartanburg SC",
+    "date": "Março 2018 – Maio 2018",
+    "category": "Automotivo",
+    "description": "Integração de PLC e Robô na linha para montagem de powertrain e carroceria na fábrica BMW Spartanburg.",
+    "technologies": ["Integração PLC", "Robótica", "Linha"],
+    "tags": ["Automotivo", "BMW", "Robótica", "Linha de Montagem"],
+    "image": "/images/home/projects/project.webp"
+  },
+  {
+    "id": 6,
+    "title": "Funilaria da Torre de Chicago",
+    "date": "Março 2018 – Abril 2019",
+    "category": "Automotivo",
+    "description": "Projeto de integração de PLC de funilaria usando equipamentos Rockwell para operações de fabricação automotiva.",
+    "technologies": ["PLC Rockwell", "Sistemas de Funilaria", "Controle Industrial"],
+    "tags": ["Automotivo", "Funilaria", "Rockwell", "Fabricação"],
+    "image": "/images/home/projects/project.webp"
+  }
+]

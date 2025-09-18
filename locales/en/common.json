@@ -1,0 +1,539 @@
+{
+  "navigation": {
+    "company": "Company",
+    "cases": "Cases",
+    "services": "Services",
+    "contact": "Contact",
+    "all": "All",
+    "allServices": "All Services",
+    "close": "Close"
+  },
+  "services": {
+    "plc-ihm": "PLC and HMI Programming",
+    "vfd": "VFD Programming",
+    "electrical-projects": "Electrical Projects",
+    "panel-assembly": "Panel Assembly",
+    "nr12-compliance": "NR-12 Compliance",
+    "technical-support": "Technical Support",
+    "consulting": "Consulting",
+    "training": "Training",
+    "pneumatic-projects": "Pneumatic Projects",
+    "mitsubishi-representation": "Mitsubishi Representation"
+  },
+  "servicesDetails": {
+    "plc-ihm": {
+      "title": "PLC and IHM Programming",
+      "description": "Specialists in programmable logic controller and human-machine interface programming",
+      "brands": [
+        "Siemens S5, S7 e TIA Portal",
+        "Rockwell: PLC-5, SLC-5000, Micrologix, Compact Logix e Logix",
+        "Mitsubishi",
+        "Omron",
+        "Panasonic",
+        "Unitronics"
+      ]
+    },
+    "vfd": {
+      "title": "VFD Programming",
+      "description": "Configuration and programming of frequency inverters for motor control",
+      "brands": [
+        "Emerson",
+        "Siemens",
+        "Rockwell",
+        "Mitsubishi",
+        "Sew",
+        "Danfoss"
+      ]
+    },
+    "electrical-projects": {
+      "title": "Electrical Design",
+      "description": "Electrical design (On Eplan and Cad) of machines and equipment"
+    },
+    "panel-assembly": {
+      "title": "Assembly of Panels",
+      "description": "Assembly and installation of industrial electrical panels"
+    },
+    "nr12-compliance": {
+      "title": "Machine Adequacy to Standard NR-12",
+      "description": "Adequacy of machines and equipment to work safety standards"
+    },
+    "technical-support": {
+      "title": "Technical Support",
+      "description": "Technical support for PLC maintenance (\"on demand\" or contract) and machinery and equipment specification"
+    },
+    "consulting": {
+      "title": "Consultancy in Engineering and Projects",
+      "description": "Consultancy for end user, managing all the stages of the project of the quotation until the final delivery"
+    },
+    "training": {
+      "title": "Training",
+      "description": "Logic and product sizing training, step path diagram, elaboration of work logic and integration between mechanical and electrical engineering"
+    },
+    "pneumatic-projects": {
+      "title": "Pneumatic, Hydraulic and Vacuum Project",
+      "description": "Pneumatic, Hydraulic and Vacuum Project (Plan A and P)"
+    },
+    "mitsubishi-representation": {
+      "title": "Mitsubishi Representation",
+      "description": "Representation in PLC and VFD Mitsubishi and programming training in PLC and IHM"
+    }
+  },
+  "industries": {
+    "beverages": "Beverages",
+    "energy": "Energy",
+    "automotive": "Automotive",
+    "cosmetics": "Cosmetics"
+  },
+  "common": {
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "getQuote": "Get quote",
+    "viewAll": "View all",
+    "backToTop": "Back to top"
+  },
+  "footer": {
+    "rightsReserved": "All rights reserved",
+    "followUs": "Follow us",
+    "quickLinks": "Quick links",
+    "contactInfo": "Contact information",
+    "socialMedia": "Social Media",
+    "home": "Home",
+    "solutions": "Solutions",
+    "cases": "Cases",
+    "contact": "Contact",
+    "copyright": "© {year} J&A Automation. All rights reserved."
+  },
+  "servicesGrid": {
+    "title": "Our Services",
+    "subtitle": "Complete solutions for industrial automation and process optimization",
+    "ctaText": "Ready to transform your industrial processes?",
+    "viewAllServices": "View All Services",
+    "getInTouch": "Get in Touch",
+    "services": [
+      {
+        "id": 1,
+        "title": "PLC and IHM Programming",
+        "description": "Specialists in programmable logic controller and human-machine interface programming",
+        "icon": "⚙️"
+      },
+      {
+        "id": 2,
+        "title": "VFD Programming",
+        "description": "Configuration and programming of frequency inverters for motor control",
+        "icon": "🔄"
+      },
+      {
+        "id": 3,
+        "title": "Electrical Design",
+        "description": "Electrical design (On Eplan and Cad) of machines and equipment",
+        "icon": "⚡"
+      },
+      {
+        "id": 4,
+        "title": "Assembly of Panels",
+        "description": "Assembly and installation of industrial electrical panels",
+        "icon": "🔧"
+      },
+      {
+        "id": 5,
+        "title": "Machine Adequacy to Standard NR-12",
+        "description": "Adequacy of machines and equipment to work safety standards",
+        "icon": "🛡️"
+      },
+      {
+        "id": 6,
+        "title": "Technical Support",
+        "description": "Technical support for PLC maintenance and machinery and equipment specification",
+        "icon": "🆘"
+      },
+      {
+        "id": 7,
+        "title": "Consultancy in Engineering and Projects",
+        "description": "Consultancy for end user, managing all the stages of the project",
+        "icon": "📋"
+      },
+      {
+        "id": 8,
+        "title": "Training",
+        "description": "Logic and product sizing training and integration between engineering",
+        "icon": "🎓"
+      },
+      {
+        "id": 9,
+        "title": "Pneumatic, Hydraulic and Vacuum Project",
+        "description": "Pneumatic, Hydraulic and Vacuum Project (Plan A and P)",
+        "icon": "💨"
+      },
+      {
+        "id": 10,
+        "title": "Mitsubishi Representation",
+        "description": "Representation in PLC and VFD Mitsubishi and programming training",
+        "icon": "🏢"
+      }
+    ]
+  },
+  "aboutSection": {
+    "title": "About TAS Automation",
+    "presentation": {
+      "title": "Presentation",
+      "paragraphs": [
+        "TAS Automação was founded in 2008 by a group of Engineers from multinational engineering companies, with strong experience in industrial automation and maintenance projects. It started its work offering PLC programming, robots, electrical projects, line simulation, mechanical and pneumatic projects.",
+        "The experience acquired in the industry made TAS Automação stand out in the market for offering solutions that serve production, maintenance and projects.",
+        "Over time and through market acceptance, it has established partnerships with Siemens, Rockwell, Macomb Community College, Mitsubishi, Atlas Copco and RedLion."
+      ]
+    },
+    "projects": {
+      "title": "Our Projects",
+      "intro": "Currently offers solutions and projects for sectors of industries in general.",
+      "items": [
+        "PLC, HMI and Supervisory programming.",
+        "Line and process simulation with robots.",
+        "Electrical, mechanical, hydraulic and pneumatic design.",
+        "Technical assistance of electronic components.",
+        "Maintenance and operational training."
+      ]
+    },
+    "helpdesk": {
+      "paragraph": "Thinking about minimizing response time in maintenance emergencies, it has a Help Desk sector, where it operates online on the customer's PLC for rapid fault diagnosis."
+    }
+  },
+  "projectsCarousel": {
+    "title": "Cases",
+    "description": "Manufacturers and bottlers of beverages and food rely on J&A Automation and report on their experiences with our automation lines. Find out first-hand when there are new machine and plant solutions for the beverage and food industry.",
+    "linkText": "To the J&A Magazine",
+    "prevButton": "Previous",
+    "nextButton": "Next"
+  },
+  "heroCarousel": {
+    "slides": [
+      {
+        "title": "We Turn Challenges into Opportunities",
+        "subtitle": "Innovative business solutions to accelerate your company's growth",
+        "primary": { "text": "Contact Us", "href": "/contato" },
+        "secondary": { "text": "Our Solutions", "href": "/solutions" },
+        "image": "/images/home/carrossel_1.jpg"
+      },
+      {
+        "title": "Advanced Industrial Automation",
+        "subtitle": "Cutting-edge technology to optimize processes and increase productivity",
+        "primary": { "text": "See Our Cases", "href": "/cases" },
+        "secondary": { "text": "Request a Quote", "href": "/contato" },
+        "image": "/images/home/carrossel_2.jpg"
+      },
+      {
+        "title": "Innovation and Excellence",
+        "subtitle": "Strategic partnership for the success of your industrial project",
+        "primary": { "text": "Learn More", "href": "/solutions" },
+        "secondary": { "text": "Get in Touch", "href": "/contato" },
+        "image": "/images/home/carrossel_3.jpg"
+      }
+    ]
+  },
+  "casesPage": {
+    "title": "Success Stories",
+    "subtitle": "Discover how J&A Automation has transformed manufacturing processes across multiple industries with cutting-edge automation solutions.",
+    "altText": "Success Stories - Industrial Automation",
+    "stats": {
+      "projects": "Projects",
+      "industries": "Industries",
+      "years": "Years",
+      "successRate": "Success Rate"
+    },
+    "projectPeriod": "Project Period:",
+    "projectDescription": "Project Description",
+    "projectImage": "Project Image",
+    "noProjectsFound": "No Projects Found",
+    "noProjectsMessage": "We couldn't find any projects for the selected industry.",
+    "viewAllProjects": "View All Projects"
+  },
+  "caseStudies": {
+    "beverage-1": {
+      "project": "Kaizen in bottling lines (Heineken Haiti)",
+      "description": "Auditing the line, working in the line deficiencies as operators, maintenance, supply planning. Increase of 20 points in the average efficiency"
+    },
+    "beverage-2": {
+      "project": "Cap Feeder for a Zalkin Capper - Campari",
+      "description": "PLC software modification to fit the new capper in the Krones filler. Simatic Step 7 (Siemens)"
+    },
+    "beverage-3": {
+      "project": "Filling line 40k b/h BRANA (Haiti) Heineken",
+      "description": "Comissioning, Ramp up, efficiency increase, and assisted operation. Sistem Simatic Step 7 (Siemens)"
+    },
+    "beverage-4": {
+      "project": "Format Changeover for PET 500ml Ambev Fortaleza",
+      "description": "Air conveyor software change. Sistem Simatic Step 7 (Siemens)"
+    },
+    "beverage-5": {
+      "project": "Blue Spirit ICE Changeover Cervejaria Petrópolis",
+      "description": "Recipes and software modification to run new bottles in the line. Simatic Step 7 (Siemens)"
+    },
+    "beverage-6": {
+      "project": "Filling Line 18000 b/h Campari",
+      "description": "Assembly, comissioning, and production tests. Sistem Simatic Step 7 (Siemens)"
+    },
+    "beverage-7": {
+      "project": "PET Labeller and Infeed Conveyor Coca Cola - Amapá",
+      "description": "Assembly, comissioning and production tests. Comtroll 15000 b/h. Siemens Step 7"
+    },
+    "beverage-8": {
+      "project": "Continuous Formulation Ades Unilever Pouso Alegre",
+      "description": "Software development, comissioning and production tests. Contrologix and Supervisory Factory Talk (Rockwell)"
+    },
+    "energy-1": {
+      "project": "Cleaner and Silo Expansion for Soy Beans (Incobrasa)",
+      "description": "Automation design for Silo control expansion for soy bean drying process. PLC Rockwell. Supervisory Wonderware InTouch"
+    },
+    "energy-2": {
+      "project": "Soy Oil Filling line (Automation changes) (Incobrasa)",
+      "description": "Conveyor changes to fit new production and reliability. Palletizer changes for the new pallet formation. Labeller signal exchange for conveyor. PLC Siemens. HMI Siemens"
+    },
+    "energy-3": {
+      "project": "Vapor Recovery Unit P-75",
+      "description": "Vapor recovery unit for an Oil and Gas platform, electrical and automation development. FAT, FMEA and all documentation"
+    },
+    "energy-4": {
+      "project": "P15 Petrobras Nitrogen Generator",
+      "description": "Automation development, documentation, comissioning. FAT and FMEA for a Exd Environment. Altus System for PLC. Siemens HMI"
+    },
+    "energy-5": {
+      "project": "P10 Petrobras Nitrogen Generator",
+      "description": "Automation development, documentation, comissioning. FAT and FMEA for a Exd Environment. Altus System for PLC. Siemens HMI"
+    },
+    "energy-6": {
+      "project": "P11 Petrobras Nitrogen Generator",
+      "description": "Automation development, documentation, comissioning. FAT and FMEA for a Exd Environment. Altus System for PLC. Siemens HMI"
+    },
+    "automotive-1": {
+      "project": "Schuler Stamping Press Ford",
+      "description": "Automation improvement, troubleshooting, comissioning, service"
+    },
+    "automotive-2": {
+      "project": "Wire Harness Oven BMW",
+      "description": "Wire harness oven Extension. Siemens STEP 7 and WinCC Flexible"
+    },
+    "automotive-3": {
+      "project": "Marriage Line BMW Spartanburg SC",
+      "description": "PLC and Robot integration in the marriage line, powertrain and car body"
+    },
+    "automotive-4": {
+      "project": "Hatch Lift Assist BMW Manufacturing Company",
+      "description": "Hatch lift assist on band 19, all positions according with the car body. System: Simatic S7, Festo CPX, Profinet/Profisafe, TIA 13"
+    },
+    "automotive-5": {
+      "project": "Diff Oil Filling Poke Durr (BMW USA)",
+      "description": "Interlock to avoid misplacing the filling nozzle. System: Siemens S7 TIA"
+    },
+    "automotive-6": {
+      "project": "NVLD BMW South Carolina",
+      "description": "Comissioning, interlock improvements, customer acceptance. System: Siemens TIA"
+    },
+    "automotive-7": {
+      "project": "Bodyshop Mercedes Benz - Alabama EUA",
+      "description": "ABS Tester Rebuild BMW USA: Movidrive comissioning and system startup."
+    },
+    "cosmetics-1": {
+      "project": "Hotfill Line for makeup Avon",
+      "description": "Hotfill line for makeup products. Machines: Bottle Indexation, Conveyor, Filler (hot fill), Capper, Line integration (Cooling unit, Pick and place Robot, Labeller). Responsibilities: Scope and Diagram development, Automation Development (PLC and HMI), comissioning, FAT and SAT. Rockwell"
+    },
+    "cosmetics-2": {
+      "project": "Bottle Indexation and Filler Avon",
+      "description": "Automation Development (PLC and HMI), Tests and comissioning, FAT and SAT. Rockwell"
+    },
+    "cosmetics-3": {
+      "project": "Puck Conveyor Upgrade Avon",
+      "description": "Conveyor modification to get a puck buffer in the filler infeed (Avon São Paulo). Simotion (Siemens)"
+    },
+    "cosmetics-4": {
+      "project": "Cartoner CMF 60 per minute Grupo Boticário - Optima Group Gmbh (Schwäbisch Hall, Germany)",
+      "description": "Assembly, comissioning, startup, FAT, IQ OQ, and all the documentation from english to portuguese. Simotion (Siemens)"
+    },
+    "cosmetics-5": {
+      "project": "Bug Protection Filler SC Johnson Manaus-AM",
+      "description": "Assembly, comissioning, startup and ramp up. Simotion Motion Control, IHM WinCC Flexible (Siemens)"
+    },
+    "cosmetics-6": {
+      "project": "Cap Pick and Place Avon Mexico",
+      "description": "Robotic system to feed caps in the line. Comissioning and Startup for Fanuc Robot"
+    }
+  },
+  "servicesPage": {
+    "title": "Industrial Automation Solutions",
+    "subtitle": "Cutting-edge technology and technical expertise to optimize your industrial processes and increase productivity",
+    "brands": "Brands",
+    "differentials": "Differentials",
+    "learnMore": "Learn more",
+    "services": {
+      "plc-ihm": {
+        "title": "PLC and HMI Programming",
+        "description": "Specialists in programmable logic controller and human-machine interface programming",
+        "features": [
+          "Siemens S5, S7 and TIA Portal",
+          "Rockwell: PLC-5, SLC-5000, Micrologix, Compact Logix and Logix",
+          "Mitsubishi",
+          "Omron",
+          "Panasonic",
+          "Unitronics"
+        ]
+      },
+      "vfd": {
+        "title": "VFD Programming",
+        "description": "Configuration and programming of frequency inverters for motor control",
+        "features": [
+          "Emerson",
+          "Siemens",
+          "Rockwell",
+          "Mitsubishi",
+          "Sew",
+          "Danfoss"
+        ]
+      },
+      "projetos-eletricos": {
+        "title": "Electrical Design",
+        "description": "Electrical design (On Eplan and Cad) of machines and equipment",
+        "features": [
+          "Complete projects for machines and equipment",
+          "Detailed technical documentation",
+          "Compliance with technical standards",
+          "Cost and efficiency optimization"
+        ]
+      },
+      "montagem-paineis": {
+        "title": "Panel Assembly",
+        "description": "Assembly and installation of industrial electrical panels",
+        "features": [
+          "Command and control panels",
+          "Distribution panels",
+          "Installation and commissioning",
+          "Testing and certification"
+        ]
+      },
+      "nr12": {
+        "title": "Machine Adequacy to Standard NR-12",
+        "description": "Adequacy of machines and equipment to work safety standards",
+        "features": [
+          "Risk analysis",
+          "Implementation of safety devices",
+          "Technical documentation",
+          "Operator training"
+        ]
+      },
+      "suporte-tecnico": {
+        "title": "Technical Support",
+        "description": "Technical support for PLC maintenance (\"on demand\" or contract) and machinery and equipment specification",
+        "features": [
+          "Remote and on-site service",
+          "Problem diagnosis and solution",
+          "Preventive and corrective maintenance",
+          "Specialized Help Desk"
+        ]
+      },
+      "consultoria": {
+        "title": "Consultancy in Engineering and Projects",
+        "description": "Consultancy for end user, managing all the stages of the project from quotation to final delivery",
+        "features": [
+          "Requirements analysis",
+          "Technical specification",
+          "Project management",
+          "Implementation monitoring"
+        ]
+      },
+      "treinamentos": {
+        "title": "Training",
+        "description": "Logic and product sizing training, step path diagram, elaboration of work logic and integration between mechanical and electrical engineering",
+        "features": [
+          "PLC programming",
+          "HMI configuration",
+          "System sizing",
+          "System integration"
+        ]
+      },
+      "pneumaticos": {
+        "title": "Pneumatic, Hydraulic and Vacuum Project",
+        "description": "Pneumatic, Hydraulic and Vacuum Project (Plan A and P)",
+        "features": [
+          "System sizing",
+          "Component selection",
+          "Technical documentation",
+          "Consumption optimization"
+        ]
+      },
+      "mitsubishi": {
+        "title": "Mitsubishi Representation",
+        "description": "Representation in PLC and VFD Mitsubishi and programming training in PLC and HMI",
+        "features": [
+          "Equipment supply",
+          "Specialized technical support",
+          "Dedicated training",
+          "Extended warranty"
+        ]
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Let's chat.",
+    "subtitle": "Tell me about your",
+    "subtitle2": "project.",
+    "description": "Let's create something together 🤝",
+    "contactPerson": "Contact Person",
+    "sendMessage": "Send us a message🚀",
+    "form": {
+      "fullName": "Full name*",
+      "email": "Email address*",
+      "subject": "Subject",
+      "message": "Tell us more about your project*",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "rightsReserved": "All rights reserved",
+    "followUs": "Follow us",
+    "quickLinks": "Quick links",
+    "contactInfo": "Contact information",
+    "socialMedia": "Social Media",
+    "home": "Home",
+    "solutions": "Solutions",
+    "cases": "Cases",
+    "contact": "Contact",
+    "copyright": "© {year} J&A Automation. All rights reserved.",
+    "continents": {
+      "americas": "Americas",
+      "europe": "Europe",
+      "africaAsia": "Africa & Asia"
+    },
+    "countries": {
+      "brazil": "Brazil",
+      "usa": "USA",
+      "argentina": "Argentina",
+      "chile": "Chile",
+      "colombia": "Colombia",
+      "mexico": "Mexico",
+      "panama": "Panama",
+      "peru": "Peru",
+      "paraguay": "Paraguay",
+      "canada": "Canada",
+      "uruguay": "Uruguay",
+      "haiti": "Haiti",
+      "bahamas": "Bahamas",
+      "bolivia": "Bolivia",
+      "england": "England",
+      "france": "France",
+      "belgium": "Belgium",
+      "netherlands": "Netherlands",
+      "germany": "Germany",
+      "switzerland": "Switzerland",
+      "austria": "Austria",
+      "italy": "Italy",
+      "czechRepublic": "Czech Republic",
+      "turkey": "Turkey",
+      "serbia": "Serbia",
+      "congoDR": "Congo DR",
+      "nigeria": "Nigeria",
+      "angola": "Angola",
+      "qatar": "Qatar",
+      "saudiArabia": "Saudi Arabia",
+      "philippines": "Philippines",
+      "papuaNewGuinea": "Papua New Guinea"
+    }
+  }
+}
