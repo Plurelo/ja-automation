@@ -92,18 +92,6 @@
     "viewAll": "Ver todos",
     "backToTop": "Voltar ao topo"
   },
-  "footer": {
-    "rightsReserved": "Todos os direitos reservados",
-    "followUs": "Siga-nos",
-    "quickLinks": "Links rápidos",
-    "contactInfo": "Informações de contato",
-    "socialMedia": "Redes Sociais",
-    "home": "Home",
-    "solutions": "Soluções",
-    "cases": "Cases",
-    "contact": "Contato",
-    "copyright": "© {year} J&A Automação. Todos os direitos reservados."
-  },
   "servicesGrid": {
     "title": "Nossos Serviços",
     "subtitle": "Soluções completas para automação industrial e otimização de processos",
