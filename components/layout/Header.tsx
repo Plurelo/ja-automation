@@ -20,10 +20,10 @@ type MenuItem = {
 
 // Função para criar itens de menu baseados nas traduções
 const createNavItems = (t: any, locale: string): MenuItem[] => [
-  { label: t.navigation.company, href: `/${locale}/#company`, hasChildren: false },  
-  { 
-    label: t.navigation.cases, 
-    href: `/${locale}/cases`, 
+  { label: t.navigation.company, href: `/${locale}/#company`, hasChildren: false },
+  {
+    label: t.navigation.cases,
+    href: `/${locale}/cases`,
     hasChildren: true,
     children: [
       { label: t.navigation.all, href: `/${locale}/cases` },
@@ -31,11 +31,11 @@ const createNavItems = (t: any, locale: string): MenuItem[] => [
       { label: t.industries.energy, href: `/${locale}/cases?industry=Energy` },
       { label: t.industries.automotive, href: `/${locale}/cases?industry=Automotive` },
       { label: t.industries.cosmetics, href: `/${locale}/cases?industry=Cosmetics` },
-    ] 
+    ]
   },
-  { 
-    label: t.navigation.services, 
-    href: `/${locale}/services`, 
+  {
+    label: t.navigation.services,
+    href: `/${locale}/services`,
     hasChildren: true,
     children: [
       { label: t.navigation.allServices || 'Todos os Serviços', href: `/${locale}/services` },
@@ -49,7 +49,7 @@ const createNavItems = (t: any, locale: string): MenuItem[] => [
       { label: t.services.training, href: `/${locale}/services/treinamentos` },
       { label: t.services["pneumatic-projects"], href: `/${locale}/services/pneumaticos` },
       { label: t.services["mitsubishi-representation"], href: `/${locale}/services/mitsubishi` },
-    ] 
+    ]
   },
   { label: t.navigation.contact, href: `/${locale}/contato`, hasChildren: false },
 ];
@@ -61,10 +61,10 @@ export function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const { locale, t, changeLocale } = useTranslations();
-  
+
   // Criar itens de menu baseados nas traduções
   const NAV_ITEMS = createNavItems(t as any, locale);
-  
+
   // Determinar idioma atual baseado no locale
   const currentLanguage = locale === 'en' ? 'EN' : 'PT';
 
@@ -87,17 +87,17 @@ export function Header() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image 
-              src="/images/logos/logo_jaautomation.png" 
-              alt="JA Automation Logo" 
-              width={180} 
-              height={48} 
-              className="object-contain h-auto w-auto max-h-16 sm:max-h-24" 
+            <Image
+              src="/images/logos/logo_jaautomation.png"
+              alt="JA Automation Logo"
+              width={180}
+              height={48}
+              className="object-contain h-auto w-auto max-h-16 sm:max-h-24"
               priority
             />
           </Link>
 
-          <div className="flex items-center gap-5">                        
+          <div className="flex items-center gap-5">
             {/* Seletor de idioma */}
             <div className="relative hidden sm:block">
               <button
@@ -106,9 +106,9 @@ export function Header() {
                 aria-label="Selecionar idioma"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                  <path d="M2 12h20"/>
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  <path d="M2 12h20" />
                 </svg>
               </button>
               {isLanguageOpen && (
@@ -134,7 +134,7 @@ export function Header() {
                 </div>
               )}
             </div>
-            
+
             {/* Botão hamburger */}
             <button
               aria-label="Abrir menu"
@@ -148,23 +148,22 @@ export function Header() {
       </header>
 
       {/* Overlay escuro atrás com transição suave - Movido para fora do header */}
-      <div 
-        className={`fixed inset-0 z-[60] bg-black transition-opacity duration-300 ease-in-out ${isMenuOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'}`} 
-        onClick={() => setIsMenuOpen(false)} 
+      <div
+        className={`fixed inset-0 z-[60] bg-black transition-opacity duration-300 ease-in-out ${isMenuOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        onClick={() => setIsMenuOpen(false)}
       />
 
       {/* Drawer lateral esquerdo - Movido para fora do header */}
       <aside
         aria-hidden={!isMenuOpen}
-        className={`fixed inset-y-0 left-0 z-[70] w-[85vw] sm:w-[380px] max-w-[420px] transform transition-all duration-300 ease-in-out ${
-          isMenuOpen ? "translate-x-0 shadow-[5px_0_25px_rgba(0,0,0,0.3)]" : "-translate-x-full"
-        }`}
+        className={`fixed inset-y-0 left-0 z-[70] w-[85vw] sm:w-[380px] max-w-[420px] transform transition-all duration-300 ease-in-out ${isMenuOpen ? "translate-x-0 shadow-[5px_0_25px_rgba(0,0,0,0.3)]" : "-translate-x-full"
+          }`}
       >
         {/* Fundo branco com texto cinza médio */}
         <div className="relative h-full w-full bg-white text-gray-600 shadow-2xl border-r border-gray-200">
           <div className="flex items-center justify-between p-4">
-            <button 
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors duration-200" 
+            <button
+              className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
               aria-label="Fechar menu"
             >
@@ -179,11 +178,10 @@ export function Header() {
                 <li key={item.label}>
                   {item.hasChildren ? (
                     <button
-                      className={`group flex items-center justify-between w-full text-lg sm:text-xl font-semibold tracking-wide py-2 ${
-                        activeSubmenu === item.label
-                          ? 'text-gray-800 bg-gray-100 pl-3 rounded-lg' 
+                      className={`group flex items-center justify-between w-full text-lg sm:text-xl font-semibold tracking-wide py-2 ${activeSubmenu === item.label
+                          ? 'text-gray-800 bg-gray-100 pl-3 rounded-lg'
                           : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:pl-3 transition-all duration-200'
-                      }`}
+                        }`}
                       onClick={() => {
                         setActiveSubmenu(activeSubmenu === item.label ? null : item.label);
                       }}
@@ -194,11 +192,10 @@ export function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`group flex items-center justify-between text-lg sm:text-xl font-semibold tracking-wide py-2 ${
-                        pathname === item.href 
-                          ? 'text-gray-800 bg-gray-100 pl-3 rounded-lg' 
+                      className={`group flex items-center justify-between text-lg sm:text-xl font-semibold tracking-wide py-2 ${pathname === item.href
+                          ? 'text-gray-800 bg-gray-100 pl-3 rounded-lg'
                           : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:pl-3 transition-all duration-200'
-                      }`}
+                        }`}
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="whitespace-pre-line">{item.label}</span>
@@ -217,47 +214,66 @@ export function Header() {
         </div>
       </aside>
 
-      {/* Submenu lateral (aparece à esquerda, após o menu principal) */}
+      {/* Submenu lateral (aparece à esquerda em desktop, sobreposto em mobile) */}
       {NAV_ITEMS.map((item) => {
         if (item.hasChildren && activeSubmenu === item.label) {
           return (
             <aside
               key={`submenu-${item.label}`}
               aria-hidden={!isMenuOpen || activeSubmenu !== item.label}
-              className={`fixed inset-y-0 left-0 z-[75] transform transition-all duration-300 ease-in-out ${
-                isMenuOpen && activeSubmenu === item.label 
-                  ? "translate-x-[85vw] sm:translate-x-[380px] shadow-[5px_0_25px_rgba(0,0,0,0.3)]" 
+              className={`fixed inset-y-0 left-0 z-[75] transform transition-all duration-300 ease-in-out ${isMenuOpen && activeSubmenu === item.label
+                  ? "translate-x-0 max-[729px]:translate-x-0 min-[730px] min-[730px]:sm:translate-x-[380px] shadow-[5px_0_25px_rgba(0,0,0,0.3)]"
                   : "-translate-x-full"
-              }`}
-              style={{ 
-                width: "85vw", // Para telas pequenas
-                maxWidth: "380px" // Largura máxima
+                }`}
+              style={{
+                width: "100vw", // Para telas pequenas
+                maxWidth: "410px" 
               }}
             >
               <div className="relative h-full w-full bg-white text-gray-600 shadow-2xl border-r border-gray-200">
                 <div className="flex items-center justify-between p-4">
-                  <h3 className="text-xl font-semibold text-gray-800">{item.label}</h3>
-                  <button 
-                    className="inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200" 
+                  {/* Botão Voltar - apenas em telas pequenas */}
+                  <button
+                    className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors duration-200 max-[729px]:block min-[730px]:hidden"
+                    onClick={() => setActiveSubmenu(null)}
+                    aria-label="Voltar ao menu principal"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                    <span className="text-sm">{(t as any).navigation.back || 'Voltar'}</span>
+                  </button>
+
+                  {/* Título - apenas em telas grandes */}
+                  <h3 className="text-xl font-semibold text-gray-800 max-[729px]:hidden min-[730px]:block">{item.label}</h3>
+
+                  {/* Título centralizado - apenas em telas pequenas */}
+                  <h3 className="text-xl font-semibold text-gray-800 max-[729px]:block min-[730px]:hidden flex-1 text-center">{item.label}</h3>
+
+                  {/* Botão X - apenas em telas grandes */}
+                  <button
+                    className="inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200 max-[729px]:hidden min-[730px]:block"
                     onClick={() => setActiveSubmenu(null)}
                     aria-label="Fechar submenu"
                   >
                     <X className="h-5 w-5" />
                   </button>
+
+                  {/* Espaço vazio para balancear o layout em mobile */}
+                  <div className="w-6 max-[729px]:block min-[730px]:hidden"></div>
                 </div>
-                
+
                 <div className="mt-2 px-4">
                   <ul className="space-y-3">
                     {item.children?.map((child) => (
                       <li key={child.label}>
                         <Link
                           href={child.href}
-                          className={`block text-xl font-medium py-2 px-3 rounded-lg ${
-                            (pathname === child.href || 
-                             (pathname === item.href && child.label === 'Todos')) 
-                              ? 'text-gray-800 bg-gray-100' 
+                          className={`block text-xl font-medium py-2 px-3 rounded-lg ${(pathname === child.href ||
+                              (pathname === item.href && child.label === 'Todos'))
+                              ? 'text-gray-800 bg-gray-100'
                               : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 transition-all duration-200'
-                          }`}
+                            }`}
                           onClick={() => {
                             setIsMenuOpen(false);
                             setActiveSubmenu(null);

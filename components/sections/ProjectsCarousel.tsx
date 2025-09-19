@@ -29,17 +29,17 @@ export function ProjectsCarousel() {
   }, [locale, projectsData]);
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-8 ml-4">
+    <section className="py-8 sm:py-12 lg:py-16 bg-white overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 leading-tight mb-6 sm:mb-8 text-center sm:text-left sm:ml-4">
           {carouselText?.title || "J&A Automation projects"}
         </h2>
-        
+
         <div className="relative">
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={3.2}
+            spaceBetween={12}
+            slidesPerView={1}
             navigation={{
               nextEl: '.swiper-button-next-projects',
               prevEl: '.swiper-button-prev-projects',
@@ -51,62 +51,69 @@ export function ProjectsCarousel() {
             speed={800}
             className="projects-swiper w-full"
             breakpoints={{
+              500: {
+                slidesPerView: 1.2,
+                spaceBetween: 16,
+              },
               640: {
                 slidesPerView: 1.5,
-                spaceBetween: 8,
+                spaceBetween: 16,
               },
               768: {
                 slidesPerView: 2,
-                spaceBetween: 8,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
               },
               1280: {
-                slidesPerView: 2.5,
-                spaceBetween: 12,
+                slidesPerView: 3.2,
+                spaceBetween: 20,
               }
             }}
           >
             {/* Primeiro slide com o conteúdo de texto */}
             <SwiperSlide>
-              <div className="bg-white rounded-lg shadow-sm  overflow-hidden w-full h-full flex flex-col  p-6">
-                <div className="max-w-md mx-auto">
-                  <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <div className="bg-white rounded-lg shadow-sm overflow-hidden w-full h-full flex flex-col p-4 sm:p-6 min-h-[300px] sm:min-h-[350px]">
+                <div className="flex flex-col justify-center h-full max-w-md mx-auto">
+                  <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8">
                     {carouselText?.description || "Manufacturers and bottlers of beverages and food rely on J&A Automation and report on their experiences with our automation lines. Find out first-hand when there are new machine and plant solutions for the beverage and food industry."}
                   </p>
-                  
+
                   <Link
                     href={`/${locale}/cases`}
-                    // className="inline-block bg-red-600 text-white px-8 py-3 font-medium hover:bg-red-700 transition-colors duration-200"
-                    className="inline-block border-2 border-red-600  text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-all duration-200 bg-red-600 text-white"
+                    className="inline-block border-2 border-red-600 text-white px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-white hover:text-red-600 transition-all duration-200 bg-red-600 text-center"
                   >
                     {carouselText?.linkText || "To the J&A Magazine"}
                   </Link>
                 </div>
               </div>
             </SwiperSlide>
-            
+
             {/* Project cards */}
             {randomProjects.map((project) => (
               <SwiperSlide key={project.id} >
-                  <ProjectCard project={project} />
+                <ProjectCard project={project} />
               </SwiperSlide>
             ))}
           </Swiper>
-          
+
           {/* Navigation Buttons */}
-          <div className="flex justify-center space-x-4 mt-2 gap-4">
-            <button 
-              className="swiper-button-prev-projects w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200"
+          <div className="flex justify-center space-x-3 sm:space-x-4 mt-4 sm:mt-6">
+            <button
+              className="swiper-button-prev-projects w-8 h-8 sm:w-10 sm:h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200 shadow-sm"
               aria-label={carouselText?.prevButton || "Previous"}
             >
-              <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <button 
-              className="swiper-button-next-projects w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200"
+            <button
+              className="swiper-button-next-projects w-8 h-8 sm:w-10 sm:h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200 shadow-sm"
               aria-label={carouselText?.nextButton || "Next"}
             >
-              <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>

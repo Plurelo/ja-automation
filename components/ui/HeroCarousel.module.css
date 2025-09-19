@@ -1,0 +1,25 @@
+.heroCarousel {
+  height: 100%;
+}
+
+.heroCarousel :global(.swiper-pagination) {
+  bottom: 2rem !important;
+}
+
+.heroCarousel :global(.swiper-pagination-bullet) {
+  width: 12px !important;
+  height: 12px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+  margin: 0 6px !important;
+}
+
+.heroCarousel :global(.swiper-pagination-bullet-active) {
+  background: white !important;
+  transform: scale(1.2);
+}
+
+.heroCarousel :global(.swiper-button-next),
+.heroCarousel :global(.swiper-button-prev) {
+  display: none !important;
+}

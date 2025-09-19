@@ -56,7 +56,7 @@ export function ServicesGrid() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 bg-white overflow-hidden"
+      className="relative py-12 sm:py-16 lg:py-20 bg-white overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute inset-0">
@@ -67,30 +67,30 @@ export function ServicesGrid() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ease-out ${isVisible
-            ? 'opacity-100 translate-y-0'
-            : 'opacity-0 translate-y-8'
+        <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ease-out ${isVisible
+          ? 'opacity-100 translate-y-0'
+          : 'opacity-0 translate-y-8'
           }`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             {(t as any).servicesGrid?.title || "Our Services"}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             {(t as any).servicesGrid?.subtitle || "Complete solutions for industrial automation and process optimization"}
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto place-items-center">
           {services.slice(0, 6).map((service: any, index: number) => (
             <Link
               key={service.id}
               href={`/${locale}/services/${serviceSlugById[service.id as number] || ""}`}
-              className="max-w-sm block h-full"
+              className="w-full max-w-sm block h-full"
             >
               <div
                 className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 cursor-pointer h-full flex flex-col transition-all duration-700 ease-out ${isVisible
-                    ? 'opacity-100 translate-y-0 scale-100'
-                    : 'opacity-0 translate-y-16 scale-95'
+                  ? 'opacity-100 translate-y-0 scale-100'
+                  : 'opacity-0 translate-y-16 scale-95'
                   }`}
                 style={{
                   transitionDelay: isVisible ? `${index * 150}ms` : '0ms'
@@ -120,17 +120,17 @@ export function ServicesGrid() {
           ))}
 
           {/* Cards adicionais com transição suave */}
-          <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 col-span-full transition-all duration-700 ease-in-out overflow-hidden ${showAllServices ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'} pb-10`}>
+          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 col-span-full place-items-center transition-all duration-700 ease-in-out overflow-hidden ${showAllServices ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'} pb-10`}>
             {services.slice(6).map((service: any, index: number) => (
               <Link
                 key={service.id}
                 href={`/${locale}/services/${serviceSlugById[service.id as number] || ""}`}
-                className="max-w-sm block h-full"
+                className="w-full max-w-sm block h-full"
               >
                 <div
                   className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 cursor-pointer h-full flex flex-col transition-all duration-700 ease-out ${showAllServices
-                      ? 'opacity-100 translate-y-0 scale-100'
-                      : 'opacity-0 translate-y-16 scale-95'
+                    ? 'opacity-100 translate-y-0 scale-100'
+                    : 'opacity-0 translate-y-16 scale-95'
                     }`}
                   style={{
                     transitionDelay: showAllServices ? `${index * 150}ms` : '0ms'
@@ -188,24 +188,23 @@ export function ServicesGrid() {
         )}
 
         {/* Call to Action */}
-        <div className={`text-center mt-16 transition-all duration-1000 delay-800 ease-out ${isVisible
-            ? 'opacity-100 translate-y-0'
-            : 'opacity-0 translate-y-8'
+        <div className={`text-center mt-12 sm:mt-16 transition-all duration-1000 delay-800 ease-out ${isVisible
+          ? 'opacity-100 translate-y-0'
+          : 'opacity-0 translate-y-8'
           }`}>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 px-4">
             {(t as any).servicesGrid?.ctaText || "Ready to transform your industrial processes?"}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <a
               href="/services"
-              // className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-red-500/25"
-              className="inline-block border-2 border-red-600  text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-all duration-200 bg-red-600 text-white"
+              className="inline-block border-2 border-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-white hover:text-red-600 transition-all duration-200 bg-red-600"
             >
               {(t as any).servicesGrid?.viewAllServices || "View All Services"}
             </a>
             <a
               href="/contato"
-              className="inline-block border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-all duration-200"
+              className="inline-block border-2 border-red-600 text-red-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold hover:bg-red-600 hover:text-white transition-all duration-200"
             >
               {(t as any).servicesGrid?.getInTouch || "Get in Touch"}
             </a>

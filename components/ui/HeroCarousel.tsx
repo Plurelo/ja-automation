@@ -5,6 +5,9 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from '@/lib/i18n';
+import { useState } from 'react';
+import type { Swiper as SwiperType } from 'swiper';
+import styles from './HeroCarousel.module.css';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,29 +17,46 @@ import 'swiper/css/pagination';
 export function HeroCarousel() {
   const { t, locale } = useTranslations();
   const slides = (t as any).heroCarousel?.slides || [];
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
+
+  // Debug: verificar se há slides
+  console.log('Slides disponíveis:', slides.length, slides);
+
+  if (!slides || slides.length === 0) {
+    return (
+      <section className="relative h-[95vh] overflow-hidden bg-gray-900 flex items-center justify-center">
+        <div className="text-white text-center">
+          <h1 className="text-4xl font-bold mb-4">Carregando...</h1>
+          <p>Aguarde enquanto carregamos o conteúdo</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="relative h-[95vh] overflow-hidden">
       <Swiper
+        onSwiper={(swiper) => {
+          console.log('Swiper instance created:', swiper);
+          setSwiperInstance(swiper);
+        }}
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
-        allowTouchMove={false}
-        navigation={{
-          nextEl: '.swiper-button-next-custom',
-          prevEl: '.swiper-button-prev-custom',
-        }}
+        allowTouchMove={true}
+        navigation={false}
         pagination={{
           clickable: true,
-          el: '.swiper-pagination-custom',
+          dynamicBullets: false,
         }}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         speed={800}
-        loop={true}
-        className="h-full"
+        loop={slides.length > 1}
+        className={`h-full ${styles.heroCarousel}`}
       >
         {slides.map((slide: any, index: number) => (
           <SwiperSlide key={index}>
@@ -86,19 +106,28 @@ export function HeroCarousel() {
         ))}
       </Swiper>
 
-      {/* Navegação customizada */}
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="swiper-pagination-custom flex space-x-2"></div>
-      </div>
-
-      {/* Botões de navegação */}
-      <button className="swiper-button-prev-custom absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors duration-200">
+      {/* Botões de navegação customizados */}
+      <button
+        onClick={() => {
+          console.log('Previous button clicked', swiperInstance);
+          swiperInstance?.slidePrev();
+        }}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors duration-200"
+        aria-label="Previous slide"
+      >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      
-      <button className="swiper-button-next-custom absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors duration-200">
+
+      <button
+        onClick={() => {
+          console.log('Next button clicked', swiperInstance);
+          swiperInstance?.slideNext();
+        }}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors duration-200"
+        aria-label="Next slide"
+      >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
@@ -106,3 +135,5 @@ export function HeroCarousel() {
     </section>
   );
 }
+
+
