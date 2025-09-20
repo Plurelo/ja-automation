@@ -3,6 +3,18 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import { useTranslations, getTranslationKey } from "@/lib/i18n";
 
+// CSS customizado para breakpoint específico
+const customStyles = `
+  @media (max-width: 441px) {
+    .custom-stats-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .custom-stats-grid > div {
+      grid-column: span 1 !important;
+    }
+  }
+`;
+
 // Individual Case Card Component with its own intersection observer
 function CaseCard({ caseStudy, index, t }: { caseStudy: any, index: number, t: any }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -102,8 +114,9 @@ export default function CasesPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <style jsx>{customStyles}</style>
       {/* Banner */}
-      <section className="relative w-full h-[500px] overflow-hidden mt-20">
+      <section className="relative w-full h-[600px] sm:h-[550px] md:h-[500px] overflow-hidden mt-20">
         {/* Imagem de fundo */}
         <div className="absolute inset-0">
           <Image
@@ -119,45 +132,45 @@ export default function CasesPage() {
 
         {/* Banner Content */}
         <div className="relative z-10 h-full flex items-center">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 pb-4">
             <div className="max-w-5xl">
-              <div className="mb-8">
-                <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <div className="mb-6 sm:mb-8">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                   {t.casesPage.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-3xl">
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed max-w-3xl">
                   {t.casesPage.subtitle}
                 </p>
               </div>
 
               {/* Professional Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="custom-stats-grid grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-4xl">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 border border-white/20">
                   <AnimatedCounter
                     end={caseStudies.length}
                     duration={2000}
-                    className="text-4xl font-bold text-white mb-2"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2"
                   />
-                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.projects}</div>
+                  <div className="text-gray-300 text-xs sm:text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.projects}</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 border border-white/20">
                   <AnimatedCounter
                     end={industries.length - 1}
                     duration={2200}
-                    className="text-4xl font-bold text-white mb-2"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2"
                   />
-                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.industries}</div>
+                  <div className="text-gray-300 text-xs sm:text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.industries}</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 border border-white/20 col-span-1 md:col-span-1">
                   <AnimatedCounter
                     end={15}
                     duration={2400}
                     suffix="+"
-                    className="text-4xl font-bold text-white mb-2"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2"
                   />
-                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.years}</div>
+                  <div className="text-gray-300 text-xs sm:text-sm font-medium uppercase tracking-wide">{t.casesPage.stats.years}</div>
                 </div>
-                
+
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X, ChevronRight, ChevronDown } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "@/lib/i18n";
+import ReactCountryFlag from "react-country-flag";
 
 // Definição de tipos para os itens de menu
 type MenuItem = {
@@ -120,6 +121,7 @@ export function Header() {
                       setIsLanguageOpen(false);
                     }}
                   >
+                    <ReactCountryFlag countryCode="BR" svg style={{ width: '16px', height: '14px', marginRight: "10px" }} />
                     PT
                   </button>
                   <button
@@ -129,6 +131,7 @@ export function Header() {
                       setIsLanguageOpen(false);
                     }}
                   >
+                  <ReactCountryFlag countryCode="US" svg style={{ width: '16px', height: '14px', marginRight: "10px" }} />
                     EN
                   </button>
                 </div>
