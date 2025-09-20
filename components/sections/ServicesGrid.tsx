@@ -120,7 +120,7 @@ export function ServicesGrid() {
           ))}
 
           {/* Cards adicionais com transição suave */}
-          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 col-span-full place-items-center transition-all duration-700 ease-in-out overflow-hidden ${showAllServices ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'} pb-10`}>
+          <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 col-span-full place-items-center transition-all duration-700 ease-in-out ${showAllServices ? 'opacity-100 max-h-none' : 'opacity-0 max-h-0 overflow-hidden'} pb-10`}>
             {services.slice(6).map((service: any, index: number) => (
               <Link
                 key={service.id}
