@@ -31,7 +31,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 pt-20 pb-8 px-4">
-      <div className="max-w-6xl w-full mx-auto flex items-center justify-center min-h-[calc(100vh-5rem)]">
+      <div className="max-w-6xl w-full mx-auto flex items-center justify-center min-h-[calc(100vh-5rem)] mt-4">
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden w-full">
         <div className="grid md:grid-cols-2 gap-0">
           {/* Left Column */}
