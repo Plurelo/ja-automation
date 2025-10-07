@@ -174,24 +174,24 @@
     ]
   },
   "aboutSection": {
-    "title": "About TAS Automation",
+    "title": "About J&A Automation",
     "presentation": {
       "title": "Presentation",
       "paragraphs": [
-        "TAS Automação was founded in 2008 by a group of Engineers from multinational engineering companies, with strong experience in industrial automation and maintenance projects. It started its work offering PLC programming, robots, electrical projects, line simulation, mechanical and pneumatic projects.",
-        "The experience acquired in the industry made TAS Automação stand out in the market for offering solutions that serve production, maintenance and projects.",
-        "Over time and through market acceptance, it has established partnerships with Siemens, Rockwell, Macomb Community College, Mitsubishi, Atlas Copco and RedLion."
+        "Global Expertise, Local Impact. Since 2008, J&A Automation has been transforming industries through advanced automation solutions. With a presence in 30+ countries and partnerships with global leaders, we engineer efficiency, safety, and innovation for tomorrow's factories",
+        "Founded in 2008 by a group of engineers from multinational companies in the automotive and aviation sectors, J&A Automation was born with a clear mission: to deliver world-class automation and maintenance projects.",
+        "From our early days developing PLC and HMI solutions, we expanded into robotics, BIW projects, simulation, and virtual commissioning, becoming a trusted partner for industries that cannot afford downtime.",
+        "Today, J&A Automation operates in 30 countries, with projects delivered in the Americas, Europe, Africa, and Asia. Our portfolio includes collaborations with industry giants such as Tesla, GM, Coca-Cola, Heineken, FEMSA, Paulaner, and many others.",
+        "With multilingual teams fluent in English, German, and Spanish, and direct training with manufacturers like Siemens, Rockwell, Mitsubishi, Atlas Copco, and RedLion, we ensure world-class standards adapted to local needs."
       ]
     },
     "projects": {
       "title": "Our Projects",
-      "intro": "Currently offers solutions and projects for sectors of industries in general.",
+      "intro": "At J&A Automation, every project is designed with one goal: to solve real industrial challenges. From PLC & HMI programming to robotics, BIW projects, simulation, and virtual commissioning, our solutions deliver measurable improvements in efficiency, safety, and cost reduction.",
       "items": [
-        "PLC, HMI and Supervisory programming.",
-        "Line and process simulation with robots.",
-        "Electrical, mechanical, hydraulic and pneumatic design.",
-        "Technical assistance of electronic components.",
-        "Maintenance and operational training."
+        "Over the past 15+ years, we have successfully executed projects across automotive, aviation, bottling, and consumer goods industries, partnering with global leaders such as Tesla, GM, Coca-Cola, Heineken, FEMSA, and Paulaner.",
+        "Our portfolio includes battery line integrations, robotic body shops, bottling line optimizations, and virtual commissioning programs — each one tailored to meet the specific demands of high-performance production lines.",
+        "With presence in 30 countries and a team trained directly with manufacturers like Siemens, Rockwell, and Mitsubishi, J&A Automation ensures that every project is more than an installation — it's a strategic solution for sustainable growth."
       ]
     },
     "helpdesk": {
@@ -366,47 +366,20 @@
     "services": {
       "plc-ihm": {
         "title": "PLC and HMI Programming",
-        "description": "Specialists in programmable logic controller and human-machine interface programming",
-        "features": [
-          "Siemens S5, S7 and TIA Portal",
-          "Rockwell: PLC-5, SLC-5000, Micrologix, Compact Logix and Logix",
-          "Mitsubishi",
-          "Omron",
-          "Panasonic",
-          "Unitronics"
-        ]
+        "description": "When machines stop, production loses millions. At J&A Automation, we provide expert PLC & HMI programming across Siemens, Rockwell, Mitsubishi, Omron, Panasonic, and Unitronics. Our solutions minimize downtime, ensure compliance with international safety standards, and maximize production reliability"
+        
       },
-      "vfd": {
-        "title": "VFD Programming",
-        "description": "Configuration and programming of frequency inverters for motor control",
-        "features": [
-          "Emerson",
-          "Siemens",
-          "Rockwell",
-          "Mitsubishi",
-          "Sew",
-          "Danfoss"
-        ]
+      "biw": {
+        "title": "BIW Projects (Body in White)",
+        "description": "Complex BIW projects demand precision. Poor design and integration can cause costly delays in automotive lines. With over a decade of expertise, J&A Automation delivers end-to-end BIW projects, from process design to offline programming, trusted by leading automakers worldwide."
       },
-      "projetos-eletricos": {
-        "title": "Electrical Design",
-        "description": "Electrical design (On Eplan and Cad) of machines and equipment",
-        "features": [
-          "Complete projects for machines and equipment",
-          "Detailed technical documentation",
-          "Compliance with technical standards",
-          "Cost and efficiency optimization"
-        ]
+      "virtual-commissioning": {
+        "title": "Virtual Commissioning (VCx)",
+        "description": "Startup delays are costly. Traditional commissioning exposes risks too late in the process. With Virtual Commissioning (VCx), J&A Automation validates logic, robotics, and safety before installation, cutting costs and reducing time-to-market."
       },
       "montagem-paineis": {
-        "title": "Panel Assembly",
-        "description": "Assembly and installation of industrial electrical panels",
-        "features": [
-          "Command and control panels",
-          "Distribution panels",
-          "Installation and commissioning",
-          "Testing and certification"
-        ]
+        "title": "Electrical / Mechanical / Hydraulic / Pneumatic Design",
+        "description": "Poor design means expensive rework. At J&A Automation, we deliver comprehensive engineering projects in electrical, mechanical, hydraulic, and pneumatic systems, ensuring safety, compliance, and seamless integration into your line."
       },
       "nr12": {
         "title": "Machine Adequacy to Standard NR-12",
@@ -419,34 +392,17 @@
         ]
       },
       "suporte-tecnico": {
-        "title": "Technical Support",
-        "description": "Technical support for PLC maintenance (\"on demand\" or contract) and machinery and equipment specification",
-        "features": [
-          "Remote and on-site service",
-          "Problem diagnosis and solution",
-          "Preventive and corrective maintenance",
-          "Specialized Help Desk"
-        ]
+        "title": "Help Desk & Remote Support",
+        "description": "Downtime doesn't wait — neither should support. J&A Automation's Help Desk & Remote Support provides rapid online fault diagnosis directly on your PC, minimizing response time and keeping your line running."
       },
-      "consultoria": {
-        "title": "Consultancy in Engineering and Projects",
-        "description": "Consultancy for end user, managing all the stages of the project from quotation to final delivery",
-        "features": [
-          "Requirements analysis",
-          "Technical specification",
-          "Project management",
-          "Implementation monitoring"
-        ]
+      "robotic-simulation": {
+        "title": "Robotics & Simulation",
+        "description": "Inefficient robots drain productivity. With J&A Automation’s robotic simulation and Tecnomatix expertise, we deliver optimized trajectories, cycle-time studies, and flawless offline programming to accelerate commissioning and maximize ROI."
+        
       },
       "treinamentos": {
-        "title": "Training",
-        "description": "Logic and product sizing training, step path diagram, elaboration of work logic and integration between mechanical and electrical engineering",
-        "features": [
-          "PLC programming",
-          "HMI configuration",
-          "System sizing",
-          "System integration"
-        ]
+        "title": "Operational Training",
+        "description": "Technology is only as strong as the people who run it. J&A Automation provides operational training directly with manufacturers, empowering your team to operate, maintain, and optimize automation systems with confidence."
       },
       "pneumaticos": {
         "title": "Pneumatic, Hydraulic and Vacuum Project",

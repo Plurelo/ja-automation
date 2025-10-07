@@ -353,48 +353,24 @@
     "learnMore": "Saiba mais",
     "services": {
       "plc-ihm": {
-        "title": "Programação de PLC e IHM",
-        "description": "Especialistas em programação de controladores lógicos programáveis e interfaces homem-máquina",
-        "features": [
-          "Siemens S5, S7 e TIA Portal",
-          "Rockwell: PLC-5, SLC-5000, Micrologix, Compact Logix e Logix",
-          "Mitsubishi",
-          "Omron",
-          "Panasonic",
-          "Unitronics"
-        ]
+        "title": "Programação PLC & HMI",
+        "description": "Quando as máquinas param, a produção perde milhões. Na J&A Automation, oferecemos expertise em programação PLC & HMI em Siemens, Rockwell, Mitsubishi, Omron, Panasonic e Unitronics. Nossas soluções reduzem paradas, garantem conformidade com normas internacionais e aumentam a confiabilidade da produção."
       },
-      "vfd": {
-        "title": "Programação de Drivers e Inversores",
-        "description": "Configuração e programação de inversores de frequência para controle de motores",
-        "features": [
-          "Emerson",
-          "Siemens",
-          "Rockwell",
-          "Mitsubishi",
-          "Sew",
-          "Danfoss"
-        ]
+      "robotic-simulation": {
+        "title": "Robótica & Simulação",
+        "description": "Robôs ineficientes drenam produtividade. Com a expertise da J&A Automation em simulação robótica e Tecnomatix, entregamos trajetórias otimizadas, estudos de ciclo e programação offline impecável para acelerar o comissionamento e maximizar o ROI."
       },
-      "projetos-eletricos": {
-        "title": "Projeto Elétrico",
-        "description": "Projeto elétrico (Em Eplan e Cad) de máquinas e equipamentos",
-        "features": [
-          "Projetos completos para máquinas e equipamentos",
-          "Documentação técnica detalhada",
-          "Conformidade com normas técnicas",
-          "Otimização de custos e eficiência"
-        ]
+      "biw": {
+        "title": "Projetos BIW (Body in White)",
+        "description": "Projetos BIW complexos exigem precisão. Erros de design e integração podem gerar atrasos caros em linhas automotivas. Com mais de uma década de expertise, a J&A Automation entrega projetos BIW completos, do design de processos à programação offline, confiada por líderes automotivos globais."
+      },
+      "virtual-commissioning": {
+        "title": "Virtual Commissioning (VCx)",
+        "description": "Atrasos no startup custam caro. O comissionamento tradicional expõe riscos tarde demais no processo. Com o Virtual Commissioning (VCx), a J&A Automation valida lógica, robótica e segurança antes da instalação, reduzindo custos e acelerando o time-to-market."
       },
       "montagem-paineis": {
-        "title": "Montagem de Painéis",
-        "description": "Montagem e instalação de painéis elétricos industriais",
-        "features": [
-          "Painéis de comando e controle",
-          "Painéis de distribuição",
-          "Instalação e comissionamento",
-          "Testes e certificação"
-        ]
+        "title": "Projetos Elétricos / Mecânicos / Hidráulicos / Pneumáticos",
+        "description": "Um design mal feito gera retrabalho caro. Na J&A Automation, entregamos projetos completos de engenharia elétrica, mecânica, hidráulica e pneumática, garantindo segurança, conformidade e integração perfeita à sua linha."
       },
       "nr12": {
         "title": "Adequação de Máquinas a Norma NR-12",
@@ -407,34 +383,13 @@
         ]
       },
       "suporte-tecnico": {
-        "title": "Suporte Técnico",
-        "description": "Suporte técnico para manutenção de PLC (\"on demand\" ou contrato) e especificação de máquinas e equipamentos",
-        "features": [
-          "Atendimento remoto e presencial",
-          "Diagnóstico e solução de problemas",
-          "Manutenção preventiva e corretiva",
-          "Help Desk especializado"
-        ]
+        "title": "Help Desk & Suporte Remoto",
+        "description": "O downtime não espera — e o suporte também não deve esperar. O Help Desk & Suporte Remoto da J&A Automation oferece diagnóstico rápido de falhas diretamente no seu PC, reduzindo o tempo de resposta e mantendo sua linha operando."
       },
-      "consultoria": {
-        "title": "Consultoria em Engenharia e Projetos",
-        "description": "Consultoria para usuário final, gerenciando todas as etapas do projeto da cotação até a entrega final",
-        "features": [
-          "Análise de requisitos",
-          "Especificação técnica",
-          "Gerenciamento de projetos",
-          "Acompanhamento de implementação"
-        ]
-      },
+      
       "treinamentos": {
-        "title": "Treinamentos",
-        "description": "Treinamento em lógica e dimensionamento de produtos, diagrama de trajeto passo, elaboração de lógica de trabalho e integração entre engenharias mecânica e elétrica",
-        "features": [
-          "Programação de PLCs",
-          "Configuração de IHMs",
-          "Dimensionamento de sistemas",
-          "Integração entre sistemas"
-        ]
+        "title": "Treinamentos Operacionais",
+        "description": "A tecnologia é tão forte quanto as pessoas que a operam. A J&A Automation oferece treinamentos operacionais diretamente com fabricantes, capacitando sua equipe a operar, manter e otimizar sistemas de automação com confiança."
       },
       "pneumaticos": {
         "title": "Projeto Pneumático, Hidráulico e Vácuo",

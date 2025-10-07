@@ -9,16 +9,29 @@ export default function ServicesPage() {
   const { t, locale } = useTranslations();
   const services = [
     { id: "plc-ihm", icon: "⚙️" },
-    { id: "vfd", icon: "🔄" },
-    { id: "projetos-eletricos", icon: "⚡" },
+    { id: "robotic-simulation", icon: "📋" },
+    { id: "biw", icon: "🔄" },
+    { id: "virtual-commissioning", icon: "⚡" },
     { id: "montagem-paineis", icon: "🔧" },
-    { id: "nr12", icon: "🛡️" },
     { id: "suporte-tecnico", icon: "🆘" },
-    { id: "consultoria", icon: "📋" },
     { id: "treinamentos", icon: "🎓" },
-    { id: "pneumaticos", icon: "💨" },
-    { id: "mitsubishi", icon: "🏢" }
+    // { id: "nr12", icon: "🛡️" },
+    // { id: "pneumaticos", icon: "💨" },
+    // { id: "mitsubishi", icon: "🏢" },
   ];
+
+  // const services = [
+  //   { id: "plc-ihm", icon: "⚙️" },
+  //   { id: "consultoria", icon: "📋" },
+  //   { id: "vfd", icon: "🔄" },
+  //   { id: "projetos-eletricos", icon: "⚡" },
+  //   { id: "montagem-paineis", icon: "🔧" },
+  //   { id: "suporte-tecnico", icon: "🆘" },
+  //   { id: "treinamentos", icon: "🎓" },
+  //   { id: "nr12", icon: "🛡️" },
+  //   { id: "pneumaticos", icon: "💨" },
+  //   { id: "mitsubishi", icon: "🏢" },
+  // ];
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -27,12 +40,8 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container relative z-10 mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              {t.servicesPage.title}
-            </h1>
-            <p className="text-xl md:text-2xl font-light text-gray-200 max-w-3xl mx-auto">
-              {t.servicesPage.subtitle}
-            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">{t.servicesPage.title}</h1>
+            <p className="text-xl md:text-2xl font-light text-gray-200 max-w-3xl mx-auto">{t.servicesPage.subtitle}</p>
           </div>
         </div>
       </section>
@@ -55,25 +64,18 @@ export default function ServicesPage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4 w-14 h-14 bg-white/90 backdrop-blur rounded-lg flex items-center justify-center shadow-md">
-                    <div className="text-red-600 text-2xl">
-                      {service.icon}
-                    </div>
+                    <div className="text-red-600 text-2xl">{service.icon}</div>
                   </div>
                 </div>
 
                 <div className="p-8">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    {t.servicesPage.services[service.id]?.title || service.id}
-                  </h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">{t.servicesPage.services[service.id]?.title || service.id}</h2>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    {t.servicesPage.services[service.id]?.description || 'Description not available'}
+                    {t.servicesPage.services[service.id]?.description || "Description not available"}
                   </p>
 
                   <div className="mb-8">
-                    <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                      <span className="w-1.5 h-6 bg-red-600 rounded-sm mr-3"></span>
-                      {service.id === "plc-ihm" || service.id === "vfd" ? t.servicesPage.brands : t.servicesPage.differentials}
-                    </h3>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center"></h3>
                     <ul className="space-y-3">
                       {t.servicesPage.services[service.id]?.features?.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-3">

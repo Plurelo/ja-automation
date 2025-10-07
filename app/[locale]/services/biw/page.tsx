@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { translations } from "./translations";
 
-export default function TechnicalSupportPage() {
+export default function VFDPage() {
   const params = useParams();
   const locale = (params?.locale as string) || "pt";
   const t = (translations as any)[locale] || translations.pt;
