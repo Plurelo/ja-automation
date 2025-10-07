@@ -10,15 +10,12 @@
   },
   "services": {
     "plc-ihm": "PLC and HMI Programming",
-    "vfd": "VFD Programming",
-    "electrical-projects": "Electrical Projects",
-    "panel-assembly": "Panel Assembly",
-    "nr12-compliance": "NR-12 Compliance",
-    "technical-support": "Technical Support",
-    "consulting": "Consulting",
-    "training": "Training",
-    "pneumatic-projects": "Pneumatic Projects",
-    "mitsubishi-representation": "Mitsubishi Representation"
+    "robotic-simulation": "Robotics & Simulation",
+    "biw": "BIW Projects (Body in White)",
+    "virtual-commissioning": "Virtual Commissioning (VCx)",
+    "montagem-paineis": "Electrical / Mechanical / Hydraulic / Pneumatic Design",
+    "technical-support": "Help Desk & Remote Support",
+    "training": "Operational Training"
   },
   "servicesDetails": {
     "plc-ihm": {
@@ -92,18 +89,7 @@
     "viewAll": "View all",
     "backToTop": "Back to top"
   },
-  "footer": {
-    "rightsReserved": "All rights reserved",
-    "followUs": "Follow us",
-    "quickLinks": "Quick links",
-    "contactInfo": "Contact information",
-    "socialMedia": "Social Media",
-    "home": "Home",
-    "solutions": "Solutions",
-    "cases": "Cases",
-    "contact": "Contact",
-    "copyright": "© {year} J&A Automation. All rights reserved."
-  },
+  
   "servicesGrid": {
     "title": "Our Services",
     "subtitle": "Complete solutions for industrial automation and process optimization",
@@ -119,57 +105,39 @@
       },
       {
         "id": 2,
-        "title": "VFD Programming",
+        "title": "Robotics & Simulation",
         "description": "Configuration and programming of frequency inverters for motor control",
         "icon": "🔄"
       },
       {
         "id": 3,
-        "title": "Electrical Design",
+        "title": "BIW Projects (Body in White)",
         "description": "Electrical design (On Eplan and Cad) of machines and equipment",
         "icon": "⚡"
       },
       {
         "id": 4,
-        "title": "Assembly of Panels",
+        "title": "Virtual Commissioning (VCx)",
         "description": "Assembly and installation of industrial electrical panels",
         "icon": "🔧"
       },
       {
         "id": 5,
-        "title": "Machine Adequacy to Standard NR-12",
+        "title": "Electrical / Mechanical / Hydraulic / Pneumatic Design",
         "description": "Adequacy of machines and equipment to work safety standards",
         "icon": "🛡️"
       },
       {
         "id": 6,
-        "title": "Technical Support",
+        "title": "Help Desk & Remote Support",
         "description": "Technical support for PLC maintenance and machinery and equipment specification",
         "icon": "🆘"
       },
       {
         "id": 7,
-        "title": "Consultancy in Engineering and Projects",
+        "title": "Operational Training",
         "description": "Consultancy for end user, managing all the stages of the project",
         "icon": "📋"
-      },
-      {
-        "id": 8,
-        "title": "Training",
-        "description": "Logic and product sizing training and integration between engineering",
-        "icon": "🎓"
-      },
-      {
-        "id": 9,
-        "title": "Pneumatic, Hydraulic and Vacuum Project",
-        "description": "Pneumatic, Hydraulic and Vacuum Project (Plan A and P)",
-        "icon": "💨"
-      },
-      {
-        "id": 10,
-        "title": "Mitsubishi Representation",
-        "description": "Representation in PLC and VFD Mitsubishi and programming training",
-        "icon": "🏢"
       }
     ]
   },
@@ -400,7 +368,7 @@
         "description": "Inefficient robots drain productivity. With J&A Automation’s robotic simulation and Tecnomatix expertise, we deliver optimized trajectories, cycle-time studies, and flawless offline programming to accelerate commissioning and maximize ROI."
         
       },
-      "treinamentos": {
+      "operational-training": {
         "title": "Operational Training",
         "description": "Technology is only as strong as the people who run it. J&A Automation provides operational training directly with manufacturers, empowering your team to operate, maintain, and optimize automation systems with confidence."
       },

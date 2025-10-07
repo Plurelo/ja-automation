@@ -10,13 +10,13 @@
   },
   "services": {
     "plc-ihm": "Programação de PLC e IHM",
-    "vfd": "Programação de Drivers e Inversores",
-    "electrical-projects": "Projeto Elétrico",
-    "panel-assembly": "Montagem de Painéis",
-    "nr12-compliance": "Adequação de Máquinas a Norma NR-12",
-    "technical-support": "Suporte Técnico",
+    "robotic-simulation": "Simulação Robótica",
+    "biw": "Projetos BIW",
+    "virtual-commissioning": "Comissionamento Virtual (VCx)",
+    "montagem-paineis": " Electrical / Mechanical / Hydraulic / Pneumatic Design",
+    "technical-support": "Help Desk e Suporte Remoto",
+    "operational-training": "Treinamento Operacional",
     "consulting": "Consultoria em Engenharia e Projetos",
-    "training": "Treinamentos",
     "pneumatic-projects": "Projeto Pneumático, Hidráulico e Vácuo",
     "mitsubishi-representation": "Representação Mitsubishi"
   },
@@ -101,63 +101,45 @@
     "services": [
       {
         "id": 1,
-        "title": "Programação de PLC e IHM",
+        "title": "Programação PLC & HMI",
         "description": "Especialistas em programação de controladores lógicos programáveis e interfaces homem-máquina",
         "icon": "⚙️"
       },
       {
         "id": 2,
-        "title": "Programação de Drivers e Inversores",
+        "title": "Robótica & Simulação",
         "description": "Configuração e programação de inversores de frequência para controle de motores",
         "icon": "🔄"
       },
       {
         "id": 3,
-        "title": "Projeto Elétrico",
+        "title": "Projetos BIW (Body in White)",
         "description": "Projeto elétrico (Em Eplan e Cad) de máquinas e equipamentos",
         "icon": "⚡"
       },
       {
         "id": 4,
-        "title": "Montagem de Painéis",
+        "title": "Virtual Commissioning (VCx)",
         "description": "Montagem e instalação de painéis elétricos industriais",
         "icon": "🔧"
       },
       {
         "id": 5,
-        "title": "Adequação de Máquinas a Norma NR-12",
+        "title": "Projetos Elétricos / Mecânicos / Hidráulicos / Pneumáticos",
         "description": "Adequação de máquinas e equipamentos às normas de segurança do trabalho",
         "icon": "🛡️"
       },
       {
         "id": 6,
-        "title": "Suporte Técnico",
+        "title": "Help Desk & Suporte Remoto",
         "description": "Suporte técnico para manutenção de PLC e especificação de máquinas e equipamentos",
         "icon": "🆘"
       },
       {
         "id": 7,
-        "title": "Consultoria em Engenharia e Projetos",
+        "title": "Treinamento Operacional",
         "description": "Consultoria para usuário final, gerenciando todas as etapas do projeto",
         "icon": "📋"
-      },
-      {
-        "id": 8,
-        "title": "Treinamentos",
-        "description": "Treinamento em lógica, dimensionamento e integração entre engenharias",
-        "icon": "🎓"
-      },
-      {
-        "id": 9,
-        "title": "Projeto Pneumático, Hidráulico e Vácuo",
-        "description": "Projeto Pneumático, Hidráulico e Vácuo (Plano A e P)",
-        "icon": "💨"
-      },
-      {
-        "id": 10,
-        "title": "Representação Mitsubishi",
-        "description": "Representação em PLC e VFD Mitsubishi e treinamento de programação",
-        "icon": "🏢"
       }
     ]
   },
@@ -387,7 +369,7 @@
         "description": "O downtime não espera — e o suporte também não deve esperar. O Help Desk & Suporte Remoto da J&A Automation oferece diagnóstico rápido de falhas diretamente no seu PC, reduzindo o tempo de resposta e mantendo sua linha operando."
       },
       
-      "treinamentos": {
+      "operational-training": {
         "title": "Treinamentos Operacionais",
         "description": "A tecnologia é tão forte quanto as pessoas que a operam. A J&A Automation oferece treinamentos operacionais diretamente com fabricantes, capacitando sua equipe a operar, manter e otimizar sistemas de automação com confiança."
       },

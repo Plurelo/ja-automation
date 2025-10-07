@@ -32,25 +32,25 @@ const createNavItems = (t: any, locale: string): MenuItem[] => [
       { label: t.industries.energy, href: `/${locale}/cases?industry=Energy` },
       { label: t.industries.automotive, href: `/${locale}/cases?industry=Automotive` },
       { label: t.industries.cosmetics, href: `/${locale}/cases?industry=Cosmetics` },
-    ]
+    ],
   },
   {
     label: t.navigation.services,
     href: `/${locale}/services`,
     hasChildren: true,
     children: [
-      { label: t.navigation.allServices || 'Todos os Serviços', href: `/${locale}/services` },
+      { label: t.navigation.allServices || "Todos os Serviços", href: `/${locale}/services` },
       { label: t.services["plc-ihm"], href: `/${locale}/services/plc-ihm` },
-      { label: t.services.vfd, href: `/${locale}/services/vfd` },
-      { label: t.services["electrical-projects"], href: `/${locale}/services/projetos-eletricos` },
-      { label: t.services["panel-assembly"], href: `/${locale}/services/montagem-paineis` },
-      { label: t.services["nr12-compliance"], href: `/${locale}/services/nr12` },
+      { label: t.services["robotic-simulation"], href: `/${locale}/services/robotic-simulation` },
+      { label: t.services["biw"], href: `/${locale}/services/biw` },
+      { label: t.services["virtual-commissioning"], href: `/${locale}/services/virtual-commissioning` },
+      { label: t.services["montagem-paineis"], href: `/${locale}/services/montagem-paineis` },
       { label: t.services["technical-support"], href: `/${locale}/services/suporte-tecnico` },
-      { label: t.services.consulting, href: `/${locale}/services/consultoria` },
-      { label: t.services.training, href: `/${locale}/services/treinamentos` },
-      { label: t.services["pneumatic-projects"], href: `/${locale}/services/pneumaticos` },
-      { label: t.services["mitsubishi-representation"], href: `/${locale}/services/mitsubishi` },
-    ]
+      { label: t.services["operational-training"], href: `/${locale}/services/operational-training` },
+      // { label: t.services.training, href: `/${locale}/services/treinamentos` },
+      // { label: t.services["pneumatic-projects"], href: `/${locale}/services/pneumaticos` },
+      // { label: t.services["mitsubishi-representation"], href: `/${locale}/services/mitsubishi` },
+    ],
   },
   { label: t.navigation.contact, href: `/${locale}/contato`, hasChildren: false },
 ];
@@ -67,7 +67,7 @@ export function Header() {
   const NAV_ITEMS = createNavItems(t as any, locale);
 
   // Determinar idioma atual baseado no locale
-  const currentLanguage = locale === 'en' ? 'EN' : 'PT';
+  const currentLanguage = locale === "en" ? "EN" : "PT";
 
   // Evita scroll do body quando o menu está aberto
   useEffect(() => {
@@ -106,7 +106,18 @@ export function Header() {
                 onClick={() => setIsLanguageOpen((v) => !v)}
                 aria-label="Selecionar idioma"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5"
+                >
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                   <path d="M2 12h20" />
@@ -117,21 +128,21 @@ export function Header() {
                   <button
                     className="w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
                     onClick={() => {
-                      changeLocale('pt');
+                      changeLocale("pt");
                       setIsLanguageOpen(false);
                     }}
                   >
-                    <ReactCountryFlag countryCode="BR" svg style={{ width: '16px', height: '14px', marginRight: "10px" }} />
+                    <ReactCountryFlag countryCode="BR" svg style={{ width: "16px", height: "14px", marginRight: "10px" }} />
                     PT
                   </button>
                   <button
                     className="w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
                     onClick={() => {
-                      changeLocale('en');
+                      changeLocale("en");
                       setIsLanguageOpen(false);
                     }}
                   >
-                  <ReactCountryFlag countryCode="US" svg style={{ width: '16px', height: '14px', marginRight: "10px" }} />
+                    <ReactCountryFlag countryCode="US" svg style={{ width: "16px", height: "14px", marginRight: "10px" }} />
                     EN
                   </button>
                 </div>
@@ -152,15 +163,18 @@ export function Header() {
 
       {/* Overlay escuro atrás com transição suave - Movido para fora do header */}
       <div
-        className={`fixed inset-0 z-[60] bg-black transition-opacity duration-300 ease-in-out ${isMenuOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        className={`fixed inset-0 z-[60] bg-black transition-opacity duration-300 ease-in-out ${
+          isMenuOpen ? "opacity-50 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
         onClick={() => setIsMenuOpen(false)}
       />
 
       {/* Drawer lateral esquerdo - Movido para fora do header */}
       <aside
         aria-hidden={!isMenuOpen}
-        className={`fixed inset-y-0 left-0 z-[70] w-[85vw] sm:w-[380px] max-w-[420px] transform transition-all duration-300 ease-in-out ${isMenuOpen ? "translate-x-0 shadow-[5px_0_25px_rgba(0,0,0,0.3)]" : "-translate-x-full"
-          }`}
+        className={`fixed inset-y-0 left-0 z-[70] w-[85vw] sm:w-[380px] max-w-[420px] transform transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "translate-x-0 shadow-[5px_0_25px_rgba(0,0,0,0.3)]" : "-translate-x-full"
+        }`}
       >
         {/* Fundo branco com texto cinza médio */}
         <div className="relative h-full w-full bg-white text-gray-600 shadow-2xl border-r border-gray-200">
@@ -181,10 +195,11 @@ export function Header() {
                 <li key={item.label}>
                   {item.hasChildren ? (
                     <button
-                      className={`group flex items-center justify-between w-full text-lg sm:text-xl font-semibold tracking-wide py-2 ${activeSubmenu === item.label
-                          ? 'text-gray-800 bg-gray-100 pl-3 rounded-lg'
-                          : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:pl-3 transition-all duration-200'
-                        }`}
+                      className={`group flex items-center justify-between w-full text-lg sm:text-xl font-semibold tracking-wide py-2 ${
+                        activeSubmenu === item.label
+                          ? "text-gray-800 bg-gray-100 pl-3 rounded-lg"
+                          : "text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:pl-3 transition-all duration-200"
+                      }`}
                       onClick={() => {
                         setActiveSubmenu(activeSubmenu === item.label ? null : item.label);
                       }}
@@ -195,10 +210,11 @@ export function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`group flex items-center justify-between text-lg sm:text-xl font-semibold tracking-wide py-2 ${pathname === item.href
-                          ? 'text-gray-800 bg-gray-100 pl-3 rounded-lg'
-                          : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:pl-3 transition-all duration-200'
-                        }`}
+                      className={`group flex items-center justify-between text-lg sm:text-xl font-semibold tracking-wide py-2 ${
+                        pathname === item.href
+                          ? "text-gray-800 bg-gray-100 pl-3 rounded-lg"
+                          : "text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:pl-3 transition-all duration-200"
+                      }`}
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="whitespace-pre-line">{item.label}</span>
@@ -212,7 +228,9 @@ export function Header() {
 
           {/* Rodapé opcional do drawer */}
           <div className="absolute bottom-0 left-0 right-0 p-6 text-gray-500 text-sm">
-            <p>© {new Date().getFullYear()} JA Automation. {(t as any).footer.rightsReserved}.</p>
+            <p>
+              © {new Date().getFullYear()} JA Automation. {(t as any).footer.rightsReserved}.
+            </p>
           </div>
         </div>
       </aside>
@@ -224,13 +242,14 @@ export function Header() {
             <aside
               key={`submenu-${item.label}`}
               aria-hidden={!isMenuOpen || activeSubmenu !== item.label}
-              className={`fixed inset-y-0 left-0 z-[75] transform transition-all duration-300 ease-in-out ${isMenuOpen && activeSubmenu === item.label
+              className={`fixed inset-y-0 left-0 z-[75] transform transition-all duration-300 ease-in-out ${
+                isMenuOpen && activeSubmenu === item.label
                   ? "translate-x-0 max-[729px]:translate-x-0 min-[730px] min-[730px]:sm:translate-x-[380px] shadow-[5px_0_25px_rgba(0,0,0,0.3)]"
                   : "-translate-x-full"
-                }`}
+              }`}
               style={{
                 width: "100vw", // Para telas pequenas
-                maxWidth: "410px" 
+                maxWidth: "410px",
               }}
             >
               <div className="relative h-full w-full bg-white text-gray-600 shadow-2xl border-r border-gray-200">
@@ -244,7 +263,7 @@ export function Header() {
                     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
-                    <span className="text-sm">{(t as any).navigation.back || 'Voltar'}</span>
+                    <span className="text-sm">{(t as any).navigation.back || "Voltar"}</span>
                   </button>
 
                   {/* Título - apenas em telas grandes */}
@@ -272,11 +291,11 @@ export function Header() {
                       <li key={child.label}>
                         <Link
                           href={child.href}
-                          className={`block text-xl font-medium py-2 px-3 rounded-lg ${(pathname === child.href ||
-                              (pathname === item.href && child.label === 'Todos'))
-                              ? 'text-gray-800 bg-gray-100'
-                              : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 transition-all duration-200'
-                            }`}
+                          className={`block text-xl font-medium py-2 px-3 rounded-lg ${
+                            pathname === child.href || (pathname === item.href && child.label === "Todos")
+                              ? "text-gray-800 bg-gray-100"
+                              : "text-gray-600 hover:text-gray-800 hover:bg-gray-50 transition-all duration-200"
+                          }`}
                           onClick={() => {
                             setIsMenuOpen(false);
                             setActiveSubmenu(null);

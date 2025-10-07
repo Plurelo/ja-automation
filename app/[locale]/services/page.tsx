@@ -7,6 +7,7 @@ import { useTranslations } from "@/lib/i18n";
 
 export default function ServicesPage() {
   const { t, locale } = useTranslations();
+
   const services = [
     { id: "plc-ihm", icon: "⚙️" },
     { id: "robotic-simulation", icon: "📋" },
@@ -14,7 +15,7 @@ export default function ServicesPage() {
     { id: "virtual-commissioning", icon: "⚡" },
     { id: "montagem-paineis", icon: "🔧" },
     { id: "suporte-tecnico", icon: "🆘" },
-    { id: "treinamentos", icon: "🎓" },
+    { id: "operational-training", icon: "🎓" },
     // { id: "nr12", icon: "🛡️" },
     // { id: "pneumaticos", icon: "💨" },
     // { id: "mitsubishi", icon: "🏢" },

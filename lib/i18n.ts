@@ -21,7 +21,7 @@ export interface Translations {
     "nr12-compliance": string;
     "technical-support": string;
     consulting: string;
-    training: string;
+    "operational-training": string;
     "pneumatic-projects": string;
     "mitsubishi-representation": string;
   };
@@ -210,7 +210,7 @@ export function useTranslations() {
       "nr12-compliance": "Adequação de Máquinas a Norma NR-12",
       "technical-support": "Suporte Técnico",
       consulting: "Consultoria em Engenharia e Projetos",
-      training: "Treinamentos",
+      "operational-training": "Treinamentos",
       "pneumatic-projects": "Projeto Pneumático, Hidráulico e Vácuo",
       "mitsubishi-representation": "Representação Mitsubishi",
     },
