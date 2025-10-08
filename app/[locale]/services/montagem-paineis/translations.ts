@@ -16,7 +16,7 @@ export const translations = {
         "Integration between mechanics & electrics, avoiding rework.",
       ],
       conclusion: "By applying international standards and advanced tools, we ensure your plant is built right the first time.",
-      cta: "👉 With J&A, engineering becomes your foundation for long-term reliability.",
+      cta: " With J&A, engineering becomes your foundation for long-term reliability.",
     },
     steps: {
       title: "Engineering Design",
@@ -59,7 +59,7 @@ export const translations = {
         "Integração entre mecânica e elétrica, evitando retrabalho.",
       ],
       conclusion: "Aplicando normas internacionais e ferramentas avançadas, garantimos que sua planta seja feita certa já na primeira vez.",
-      cta: "👉 Com a J&A, a engenharia se torna a base da confiabilidade a longo prazo.",
+      cta: " Com a J&A, a engenharia se torna a base da confiabilidade a longo prazo.",
     },
     steps: {
       title: "Design de Engenharia",

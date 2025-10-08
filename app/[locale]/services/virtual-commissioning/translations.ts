@@ -13,7 +13,7 @@ export const translations = {
       ],
       conclusion:
         "Leaders in automotive, bottling, and consumer goods already trust our VCx to minimize risks and achieve faster payback on automation investments.",
-      cta: "👉 VCx is not an option — it's the safest path to predictable success.",
+      cta: " VCx is not an option — it's the safest path to predictable success.",
     },
     steps: {
       title: "Virtual Commissioning (VCx)",
@@ -53,7 +53,7 @@ export const translations = {
       ],
       conclusion:
         "Líderes em automotivo, envase e bens de consumo já confiam em nosso VCx para reduzir riscos e acelerar o retorno sobre investimentos em automação.",
-      cta: "👉 O VCx não é uma opção — é o caminho mais seguro para o sucesso previsível.",
+      cta: " O VCx não é uma opção — é o caminho mais seguro para o sucesso previsível.",
     },
     steps: {
       title: "Virtual Commissioning (VCx)",

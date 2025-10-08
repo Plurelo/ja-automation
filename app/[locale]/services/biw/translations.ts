@@ -18,7 +18,7 @@ export const translations = {
       ],
       conclusion:
         "Our expertise has delivered results for global OEMs like Tesla, GM, and Volkswagen suppliers, ensuring faster launches and consistent quality.",
-      cta: "👉 With J&A, your BIW projects transform from risk to competitive advantage.",
+      cta: " With J&A, your BIW projects transform from risk to competitive advantage.",
     },
     steps: {
       title: "BIW Projects",
@@ -67,7 +67,7 @@ export const translations = {
       ],
       conclusion:
         "Nossa expertise já entregou resultados para OEMs globais como Tesla, GM e fornecedores Volkswagen, garantindo lançamentos mais rápidos e qualidade consistente.",
-      cta: "👉 Com a J&A, seus projetos BIW deixam de ser risco e se tornam vantagem competitiva.",
+      cta: " Com a J&A, seus projetos BIW deixam de ser risco e se tornam vantagem competitiva.",
     },
     steps: {
       title: "Projetos BIW",

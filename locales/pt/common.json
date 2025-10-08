@@ -144,24 +144,24 @@
     ]
   },
   "aboutSection": {
-    "title": "Sobre a TAS Automação",
+    "title": "Sobre a J&A Automação",
     "presentation": {
       "title": "Apresentação",
       "paragraphs": [
-        "A TAS Automação foi fundada em 2008, por um grupo de Engenheiros vindos de Multinacionais do ramo de Engenharia, com forte experiência em projetos de automação industrial e manutenção. Iniciou o seu trabalho oferecendo programação de PLC, Robô, Projetos Elétricos, Simulação de Linha, Mecânicos e Pneumáticos.",
-        "A experiência adquirida na indústria fez com que a TAS Automação começasse a se destacar no mercado por oferecer soluções que atendam a produção, menutenção e projeto.",
-        "Com o passar do tempo e através da aceitação do mercado, estabeleceu parcerias com Siemens, Rockwell, Macomb Community College, Mitsubishi, Atlas Copco, RedLion."
-      ]
-    },
+        "Especialização Global, Impacto Local. Desde 2008, a J&A Automação vem transformando indústrias através de soluções avançadas de automação. Com presença em mais de 30 países e parcerias com líderes globais, desenvolvemos eficiência, segurança e inovação para as fábricas do futuro.",
+        "Fundada em 2008 por um grupo de engenheiros de empresas multinacionais dos setores automotivo e de aviação, a J&A Automação nasceu com uma missão clara: entregar projetos de automação e manutenção de classe mundial.",
+      "Desde nossos primeiros dias desenvolvendo soluções de PLC e HMI, expandimos para robótica, projetos BIW, simulação e comissionamento virtual, tornando-nos um parceiro confiável para indústrias que não podem se dar ao luxo de ter tempo de inatividade.",
+"Hoje, a J&A Automação opera em 30 países, com projetos entregues nas Américas, Europa, África e Ásia. Nosso portfólio inclui colaborações com gigantes da indústria como Tesla, GM, Coca-Cola, Heineken, FEMSA, Paulaner e muitos outros.",
+        "Com equipes multilíngues fluentes em inglês, alemão e espanhol, e treinamento direto com fabricantes como Siemens, Rockwell, Mitsubishi, Atlas Copco e RedLion, garantimos padrões mundiais adaptados às necessidades locais."
+        ]
+        },
     "projects": {
-      "title": "Nossos projetos",
-      "intro": "Atualmente oferece soluções e projetos para setores de industrias em geral.",
+      "title": "Nossos Projetos",
+      "intro": "Na J&A Automação, cada projeto é desenvolvido com um objetivo: resolver desafios industriais reais. Desde programação de PLC \\u0026 HMI até robótica, projetos BIW, simulação e comissionamento virtual, nossas soluções oferecem melhorias mensuráveis em eficiência, segurança e redução de custos.",
       "items": [
-        "Programação de PLC, IHM e Supervisório.",
-        "Simulação de Linha e Processos com Robô.",
-        "Projeto Elétrico, Mecânico, Hidráulico e Pneumático.",
-        "Assistência Técnica de Componentes Eletrônicos.",
-        "Treinamento de Manutenção e Operacional."
+        "Ao longo dos últimos 15+ anos, executamos com sucesso projetos nos setores automotivo, aviação, envase e bens de consumo, em parceria com líderes globais como Tesla, GM, Coca-Cola, Heineken, FEMSA e Paulaner.",
+        "Nosso portfólio inclui integrações de linhas de baterias, oficinas robotizadas de carrocerias, otimizações de linhas de envase e programas de comissionamento virtual — cada um adaptado para atender às demandas específicas de linhas de alta performance.",
+        "Com presença em 30 países e uma equipe treinada diretamente com fabricantes como Siemens, Rockwell e Mitsubishi, a J&A Automação garante que cada projeto seja mais do que uma instalação — é uma solução estratégica para crescimento sustentável."
       ]
     },
     "helpdesk": {

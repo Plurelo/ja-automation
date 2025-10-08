@@ -18,7 +18,7 @@ export const translations = {
       ],
       conclusion:
         "With over 15 years of global expertise, and successful projects for Tesla, GM, Coca-Cola, Heineken, FEMSA, we guarantee more than just programming — we deliver operational stability.",
-      cta: "👉 Don't let downtime dictate your productivity. Partner with J&A to achieve maximum uptime and efficiency.",
+      cta: "Don't let downtime dictate your productivity. Partner with J&A to achieve maximum uptime and efficiency.",
     },
     steps: {
       title: "PLC & HMI Programming",
@@ -63,7 +63,7 @@ export const translations = {
       ],
       conclusion:
         "Com mais de 15 anos de expertise global e projetos bem-sucedidos para Tesla, GM, Coca-Cola, Heineken, FEMSA, entregamos mais do que programação: entregamos estabilidade operacional.",
-      cta: "👉 Não deixe o downtime ditar sua produtividade. Com a J&A, sua indústria alcança máxima disponibilidade e eficiência.",
+      cta: "Não deixe o downtime ditar sua produtividade. Com a J&A, sua indústria alcança máxima disponibilidade e eficiência.",
     },
     steps: {
       title: "Programação PLC & HMI",

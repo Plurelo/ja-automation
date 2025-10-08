@@ -16,7 +16,7 @@ export const translations = {
         "Contract-based or on-demand options for flexible coverage.",
       ],
       conclusion: "With a presence in 30+ countries, our support bridges the gap between emergencies and solutions.",
-      cta: "👉 Choose J&A’s Help Desk and ensure your production never stands still.",
+      cta: " Choose J&A’s Help Desk and ensure your production never stands still.",
     },
     steps: {
       title: "Help Desk & Remote Support",
@@ -59,7 +59,7 @@ export const translations = {
         "Cobertura sob contrato ou sob demanda, com flexibilidade.",
       ],
       conclusion: "Com presença em 30+ países, nosso suporte preenche a lacuna entre emergências e soluções.",
-      cta: "👉 Escolha o Help Desk da J&A e garanta que sua produção nunca pare.",
+      cta: " Escolha o Help Desk da J&A e garanta que sua produção nunca pare.",
     },
     steps: {
       title: "Help Desk & Suporte Remoto",

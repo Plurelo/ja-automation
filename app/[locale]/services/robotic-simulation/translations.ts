@@ -13,7 +13,7 @@ export const translations = {
         "Trajectory creation & validation, guaranteeing safety and precision",
       ],
       conclusion: "Our solutions have empowered Tesla, GM, Paulaner, Coca-Cola, Heineken to achieve faster launches and higher OEE.",
-      cta: "👉 With J&A, your robots stop being 'machines' and start becoming strategic assets.",
+      cta: " With J&A, your robots stop being 'machines' and start becoming strategic assets.",
     },
     steps: {
       title: "Robotics & Simulation",
@@ -53,7 +53,7 @@ export const translations = {
         "Criação e validação de trajetórias, garantindo precisão e segurança",
       ],
       conclusion: "Nossas soluções ajudaram Tesla, GM, Paulaner, Coca-Cola, Heineken a obter lançamentos mais rápidos e maior OEE.",
-      cta: "👉 Com a J&A, seus robôs deixam de ser apenas 'máquinas' e tornam-se ativos estratégicos.",
+      cta: " Com a J&A, seus robôs deixam de ser apenas 'máquinas' e tornam-se ativos estratégicos.",
     },
     steps: {
       title: "Robótica & Simulação",

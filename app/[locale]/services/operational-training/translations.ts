@@ -16,7 +16,7 @@ export const translations = {
         "Multilingual trainers fluent in English, German, and Spanish.",
       ],
       conclusion: "We have trained teams across 30+ countries, empowering engineers and operators to get the most out of automation.",
-      cta: "👉 With J&A, training is not an expense — it’s an investment in efficiency and reliability.",
+      cta: " With J&A, training is not an expense — it’s an investment in efficiency and reliability.",
     },
     steps: {
       title: "Operational Training",
@@ -59,7 +59,7 @@ export const translations = {
         "Instrutores multilíngues fluentes em inglês, alemão e espanhol.",
       ],
       conclusion: "Treinamos equipes em 30+ países, capacitando engenheiros e operadores a extrair o máximo da automação.",
-      cta: "👉 Com a J&A, treinamento não é custo — é investimento em eficiência e confiabilidade.",
+      cta: " Com a J&A, treinamento não é custo — é investimento em eficiência e confiabilidade.",
     },
     steps: {
       title: "Treinamento Operacional",
