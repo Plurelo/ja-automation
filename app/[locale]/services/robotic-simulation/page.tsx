@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { translations } from "./translations";
+import ContactCTASection from "@/components/sections/ContactCTASection";
 
 export default function ConsultoriaPage() {
   const params = useParams();
@@ -116,6 +117,9 @@ export default function ConsultoriaPage() {
           </div>
         </div>
       </div>
+      <section>
+        <ContactCTASection />
+      </section>
     </div>
   );
 }

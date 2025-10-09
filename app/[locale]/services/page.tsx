@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "@/lib/i18n";
+import ContactCTASection from "@/components/sections/ContactCTASection";
 
 export default function ServicesPage() {
   const { t, locale } = useTranslations();

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { translations } from "./translations";
+import ContactCTASection from "@/components/sections/ContactCTASection";
 
 export default function PLCIHMPage() {
   const params = useParams();
@@ -77,6 +78,10 @@ export default function PLCIHMPage() {
           </div>
         </div>
       </div>
+
+      <section>
+        <ContactCTASection />
+      </section>
     </div>
   );
 }

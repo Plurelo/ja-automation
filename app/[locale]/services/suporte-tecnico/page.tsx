@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { translations } from "./translations";
+import ContactCTASection from "@/components/sections/ContactCTASection";
 
 export default function TechnicalSupportPage() {
   const params = useParams();
@@ -116,6 +117,9 @@ export default function TechnicalSupportPage() {
           </div>
         </div>
       </div>
+      <section>
+        <ContactCTASection />
+      </section>
     </div>
   );
 }
