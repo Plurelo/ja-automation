@@ -60,23 +60,6 @@ export default function PLCIHMPage() {
             ))}
           </div>
         </div>
-
-        {/* Process Section */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{t.steps.sectionTitle}</h2>
-
-          <div className="space-y-8">
-            {t.steps.items.map((step: any, index: number) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">
-                  {index + 1}
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                <p className="text-gray-700">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       <section>
